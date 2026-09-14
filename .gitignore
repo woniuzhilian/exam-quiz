@@ -4,3 +4,31 @@ __pycache__/
 .DS_Store
 Thumbs.db
 *.log
+
+# 数据加工中间产物（裁剪图片/备份，体积大，不入库）
+exam-quiz/question_images/
+exam-quiz/unmatched_images/
+exam-quiz/missing_questions/
+exam-quiz/missing_images/
+_a/
+_t1/
+_t3/
+_t5/
+_fix_backup/
+prof_check/
+pub_check/
+prof_preview/
+prof_images/
+prof_option_images/
+prof_opt_images/
+pub_option_images/
+extracted_images/
+
+# 真题 PDF/DOCX 原始资料（体积大，仅本地保留）
+题目和答案pdf/*.pdf
+题目和答案pdf/*.docx
+
+# 题库备份文件
+questions_BACKUP_*.json
+
+
