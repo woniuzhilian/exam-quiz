@@ -1,6 +1,0 @@
-chore: 归档题库数据加工脚本与核对记录
-
-- 提交 PDF 解析、公式转写、配图裁剪、人工核对（_a/_t1~_t6 系列）等数据加工流水线脚本
-- 提交校验脚本（verify_issues.cjs、verify_images.cjs、audit_questions.* 等）
-- 提交中间索引/核对结果 JSON（_t2_srcindex.json、_t5_new.json 等）
-- .gitignore 补充：忽略裁剪图片中间产物目录、真题 PDF 原始资料、题库备份文件
