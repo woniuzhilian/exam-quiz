@@ -1,7 +1,7 @@
 <template>
   <div class="question-card">
     <div class="question-header">
-      <span class="q-num">{{ question.year }}-{{ question.id }}</span>
+      <span class="q-num">{{ question.year }}-{{ question.yearQnum || question.id }}</span>
       <span class="q-progress">{{ currentIndex + 1 }} / {{ total }}</span>
       <span class="q-subject">{{ question.smallSubject }}</span>
     </div>
@@ -37,6 +37,13 @@
       </button>
       <button
         v-if="locked"
+        class="analysis-btn"
+        @click="$emit('analysis')"
+      >
+        查看解析
+      </button>
+      <button
+        v-if="locked"
         class="next-btn"
         @click="$emit('next')"
       >
@@ -58,7 +65,7 @@ const props = defineProps({
   initialAnswer: { type: String, default: '' }
 })
 
-const emit = defineEmits(['submit', 'next', 'select'])
+const emit = defineEmits(['submit', 'next', 'select', 'analysis'])
 
 const selectedAnswer = ref(props.initialAnswer || '')
 
@@ -243,7 +250,7 @@ function selectOption(opt) {
   justify-content: center;
 }
 
-.submit-btn, .next-btn {
+.submit-btn, .next-btn, .analysis-btn {
   padding: 12px 36px;
   border: none;
   border-radius: 8px;
@@ -275,6 +282,17 @@ function selectOption(opt) {
   background: #389e0d;
 }
 
+.analysis-btn {
+  background: #fff;
+  color: #4a90d9;
+  border: 1px solid #4a90d9;
+}
+
+.analysis-btn:hover {
+  background: #4a90d9;
+  color: #fff;
+}
+
 @media (max-width: 600px) {
   .question-card {
     padding: 14px;
@@ -286,7 +304,7 @@ function selectOption(opt) {
     padding: 12px;
     font-size: 14px;
   }
-  .submit-btn, .next-btn {
+  .submit-btn, .next-btn, .analysis-btn {
     padding: 10px 24px;
     font-size: 15px;
     flex: 1;

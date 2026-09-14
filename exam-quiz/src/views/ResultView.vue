@@ -52,7 +52,8 @@
 
       <div class="action-buttons">
         <button class="btn primary" @click="retry">重新练习</button>
-        <button class="btn" @click="goWrongBook">查看错题</button>
+        <button v-if="isWrongMode" class="btn" @click="removeCorrectFromWrong">从错题本中移除答对的题目</button>
+        <button v-else class="btn" @click="goWrongBook">查看错题</button>
         <button class="btn" @click="goHome">返回首页</button>
       </div>
     </div>
@@ -69,7 +70,10 @@ import {
   calcCorrectRate,
   makeSectionKey
 } from '../utils/quiz'
-import { getSectionAnswers, getWrongBook, clearSectionProgress, clearSectionAnswers } from '../utils/storage'
+import {
+  getSectionAnswers, getWrongBook, clearSectionProgress, clearSectionAnswers,
+  removeWrong, saveSectionResult
+} from '../utils/storage'
 
 const route = useRoute()
 const router = useRouter()
@@ -81,6 +85,9 @@ const questions = ref([])
 
 const circumference = 2 * Math.PI * 70
 
+// 是否为「错题本查看结果页」
+const isWrongMode = computed(() => mode.value === 'wrong')
+
 const sectionKey = computed(() => makeSectionKey(mode.value, section.value))
 
 const result = computed(() => {
@@ -90,9 +97,17 @@ const result = computed(() => {
 
 onMounted(() => {
   loadQuestions()
+  // 记录该板块最近一次完整做完的结果（供首页显示正确率）
+  recordSectionResult()
   // 清除该板块的进度标记（已完成）
   clearSectionProgress(bigSubject.value, mode.value, section.value)
 })
+
+function recordSectionResult() {
+  const answers = getSectionAnswers(bigSubject.value, sectionKey.value)
+  const res = calcCorrectRate(questions.value, answers)
+  saveSectionResult(bigSubject.value, sectionKey.value, res)
+}
 
 function loadQuestions() {
   if (mode.value === 'smallSubject') {
@@ -117,6 +132,24 @@ function retry() {
       section: section.value
     }
   })
+}
+
+// 错题本查看结果页：从错题本中移除本次答对的题目，仅保留答错的
+function removeCorrectFromWrong() {
+  const answers = getSectionAnswers(bigSubject.value, sectionKey.value)
+  let removed = 0
+  for (const q of questions.value) {
+    const userAns = answers[q.id]
+    if (userAns && userAns === q.answer) {
+      removeWrong(bigSubject.value, q.id)
+      removed++
+    }
+  }
+  if (removed > 0) {
+    alert(`已从错题本中移除 ${removed} 道本次答对的题目`)
+  } else {
+    alert('本次没有答对的题目可移除')
+  }
 }
 
 function goWrongBook() {

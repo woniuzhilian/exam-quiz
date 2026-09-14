@@ -1,8 +1,9 @@
 <template>
   <div class="wrongbook-page">
     <div class="page-header">
-      <button class="back-btn" @click="$router.push('/')">← 返回首页</button>
+      <button class="back-btn" @click="goBack">← 返回</button>
       <h1>错题本</h1>
+      <button class="home-btn" @click="$router.push('/')">🏠 首页</button>
     </div>
 
     <!-- 选择大科目 -->
@@ -20,7 +21,7 @@
         :class="{ active: selectedBigSubject === '专业基础' }"
         @click="selectedBigSubject = '专业基础'"
       >
-        专业基础
+        岩土专业基础
         <span class="count">{{ wrongCounts['专业基础'] }}</span>
       </button>
     </div>
@@ -36,9 +37,6 @@
           <button class="delete-btn" @click="removeOne(q.id)" title="移出错题本">×</button>
         </div>
         <div class="item-question" v-html="renderQuestion(q.question)"></div>
-        <div class="item-answer">
-          <span>正确答案：<strong class="correct">{{ q.answer }}</strong></span>
-        </div>
       </div>
     </div>
 
@@ -68,6 +66,14 @@ import { getQuestionsByIds } from '../utils/quiz'
 const router = useRouter()
 const selectedBigSubject = ref('公共基础')
 const wrongBook = ref({ '公共基础': [], '专业基础': [] })
+
+function goBack() {
+  if (window.history.length > 1) {
+    router.back()
+  } else {
+    router.push('/')
+  }
+}
 
 const wrongCounts = computed(() => ({
   '公共基础': wrongBook.value['公共基础']?.length || 0,
@@ -148,6 +154,8 @@ function clearAll() {
 }
 
 .page-header h1 {
+  flex: 1;
+  text-align: center;
   font-size: 20px;
   margin: 0;
   color: #333;
@@ -159,6 +167,21 @@ function clearAll() {
   color: #4a90d9;
   font-size: 15px;
   cursor: pointer;
+}
+
+.home-btn {
+  background: none;
+  border: 1px solid #4a90d9;
+  color: #4a90d9;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.home-btn:hover {
+  background: #4a90d9;
+  color: #fff;
 }
 
 .subject-tabs {

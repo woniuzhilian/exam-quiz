@@ -1,8 +1,14 @@
 <template>
   <div class="home-page">
+    <!-- 顶部导航（step2和step3显示） -->
+    <div class="top-nav" v-if="step > 1">
+      <button class="nav-back" @click="goBackStep">← 返回上一步</button>
+      <button class="nav-home" @click="goHome">🏠 首页</button>
+    </div>
+
     <div class="header">
       <h1>岩土工程师刷题系统</h1>
-      <p class="subtitle">公共基础 + 专业基础 · 历年真题</p>
+      <p class="subtitle">公共基础 + 岩土专业基础 · 历年真题</p>
     </div>
 
     <!-- 导航按钮 -->
@@ -33,7 +39,7 @@
           @click="selectBigSubject('专业基础')"
         >
           <div class="card-icon">🏗️</div>
-          <div class="card-title">专业基础</div>
+          <div class="card-title">岩土专业基础</div>
           <div class="card-desc">{{ profStats.years }}年真题 · {{ profStats.count }}题</div>
         </div>
       </div>
@@ -62,7 +68,6 @@
           <div class="mode-desc">按年份整套真题练习</div>
         </div>
       </div>
-      <button class="back-btn" @click="step = 1">← 返回上一步</button>
     </div>
 
     <!-- 第三步：选择小科目/年份 -->
@@ -78,11 +83,15 @@
           @click="startQuiz(item)"
         >
           <span class="item-name">{{ item.name || (item.year + '年') }}</span>
+          <span
+            v-if="item.result"
+            class="item-rate"
+            :class="rateClass(item.result.rate)"
+          >上次正确率 {{ item.result.rate }}%</span>
           <span class="item-count">{{ item.count }}题</span>
           <span class="item-arrow">→</span>
         </div>
       </div>
-      <button class="back-btn" @click="step = 2">← 返回上一步</button>
     </div>
 
     <!-- 恢复进度提示 -->
@@ -99,8 +108,8 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
-import { getSmallSubjects, getYears, getQuestionsByBigSubject } from '../utils/quiz'
-import { getProgress, getWrongBook, clearAllQuizRecords } from '../utils/storage'
+import { getSmallSubjects, getYears, getQuestionsByBigSubject, makeSectionKey } from '../utils/quiz'
+import { getProgress, getWrongBook, clearAllQuizRecords, getSectionResult } from '../utils/storage'
 
 const router = useRouter()
 
@@ -109,11 +118,40 @@ const selectedBigSubject = ref('')
 const selectedMode = ref('')
 const savedProgress = ref(null)
 
+const HOME_STATE_KEY = 'quiz_home_state'
+
+function saveHomeState() {
+  localStorage.setItem(HOME_STATE_KEY, JSON.stringify({
+    step: step.value,
+    selectedBigSubject: selectedBigSubject.value,
+    selectedMode: selectedMode.value
+  }))
+}
+
+function restoreHomeState() {
+  try {
+    const saved = localStorage.getItem(HOME_STATE_KEY)
+    if (saved) {
+      const state = JSON.parse(saved)
+      step.value = state.step || 1
+      selectedBigSubject.value = state.selectedBigSubject || ''
+      selectedMode.value = state.selectedMode || ''
+    }
+  } catch (e) {
+    // ignore
+  }
+}
+
+function clearHomeState() {
+  localStorage.removeItem(HOME_STATE_KEY)
+}
+
 function refreshProgress() {
   savedProgress.value = getProgress()
 }
 
 onMounted(() => {
+  restoreHomeState()
   refreshProgress()
 })
 
@@ -136,21 +174,34 @@ const profStats = computed(() => {
 
 const itemList = computed(() => {
   if (!selectedBigSubject.value) return []
-  if (selectedMode.value === 'smallSubject') {
-    return getSmallSubjects(selectedBigSubject.value)
-  } else {
-    return getYears(selectedBigSubject.value)
-  }
+  const base = selectedMode.value === 'smallSubject'
+    ? getSmallSubjects(selectedBigSubject.value)
+    : getYears(selectedBigSubject.value)
+  // 附加最近一次完整做完该年份/小科目的正确率
+  return base.map(item => {
+    const sectionValue = item.name || item.year
+    const key = makeSectionKey(selectedMode.value, sectionValue)
+    const result = getSectionResult(selectedBigSubject.value, key)
+    return { ...item, result }
+  })
 })
+
+function rateClass(rate) {
+  if (rate >= 80) return 'rate-good'
+  if (rate >= 60) return 'rate-mid'
+  return 'rate-bad'
+}
 
 function selectBigSubject(subject) {
   selectedBigSubject.value = subject
   step.value = 2
+  saveHomeState()
 }
 
 function selectMode(mode) {
   selectedMode.value = mode
   step.value = 3
+  saveHomeState()
 }
 
 function startQuiz(item) {
@@ -188,6 +239,20 @@ function restartQuiz() {
     savedProgress.value = null
   }
 }
+
+function goBackStep() {
+  if (step.value > 1) {
+    step.value--
+    saveHomeState()
+  }
+}
+
+function goHome() {
+  step.value = 1
+  selectedBigSubject.value = ''
+  selectedMode.value = ''
+  clearHomeState()
+}
 </script>
 
 <style scoped>
@@ -196,6 +261,37 @@ function restartQuiz() {
   margin: 0 auto;
   padding: 20px;
   min-height: 100vh;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.nav-back {
+  background: none;
+  border: none;
+  color: #4a90d9;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 6px 0;
+}
+
+.nav-home {
+  background: none;
+  border: 1px solid #4a90d9;
+  color: #4a90d9;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.nav-home:hover {
+  background: #4a90d9;
+  color: #fff;
 }
 
 .header {
@@ -333,6 +429,29 @@ function restartQuiz() {
   color: #888;
   font-size: 13px;
   margin-right: 12px;
+}
+
+.item-rate {
+  font-size: 13px;
+  padding: 2px 10px;
+  border-radius: 10px;
+  margin-right: 12px;
+  white-space: nowrap;
+}
+
+.item-rate.rate-good {
+  color: #52c41a;
+  background: #f6ffed;
+}
+
+.item-rate.rate-mid {
+  color: #faad14;
+  background: #fffbe6;
+}
+
+.item-rate.rate-bad {
+  color: #ff4d4f;
+  background: #fff2f0;
 }
 
 .item-arrow {

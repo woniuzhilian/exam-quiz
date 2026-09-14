@@ -4,6 +4,7 @@ const STORAGE_KEYS = {
   PROGRESS: 'exam_quiz_progress',      // 各板块进度map + lastActive
   ANSWERS: 'exam_quiz_answers',        // 答题记录
   WRONG: 'exam_quiz_wrong',            // 错题本
+  RESULTS: 'exam_quiz_results',        // 各板块最近一次完成结果（正确率）
   SETTINGS: 'exam_quiz_settings'       // 设置
 }
 
@@ -151,6 +152,32 @@ export function removeWrong(bigSubject, questionId) {
     wrong[bigSubject] = wrong[bigSubject].filter(id => id !== questionId)
     set(STORAGE_KEYS.WRONG, wrong)
   }
+}
+
+// ===== 板块完成结果（首页显示最近一次正确率）=====
+// 结构：{ [bigSubject]: { [sectionKey]: {rate, correct, total, answered, at} } }
+export function getSectionResults() {
+  return get(STORAGE_KEYS.RESULTS, {})
+}
+
+// 记录某板块最近一次完整做完的结果（会覆盖上一次）
+export function saveSectionResult(bigSubject, sectionKey, result) {
+  const all = getSectionResults()
+  if (!all[bigSubject]) all[bigSubject] = {}
+  all[bigSubject][sectionKey] = {
+    rate: result.rate,
+    correct: result.correct,
+    total: result.total,
+    answered: result.answered,
+    at: Date.now()
+  }
+  return set(STORAGE_KEYS.RESULTS, all)
+}
+
+// 获取某板块最近一次完成结果
+export function getSectionResult(bigSubject, sectionKey) {
+  const all = getSectionResults()
+  return (all[bigSubject] && all[bigSubject][sectionKey]) || null
 }
 
 export function isWrong(bigSubject, questionId) {
