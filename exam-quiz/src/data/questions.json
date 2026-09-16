@@ -6932,44 +6932,44 @@
   {
     "year": "2018",
     "smallSubject": "线性代数",
-    "question": "矩阵$A =(-1 3 0+$所对应的二次型的标准型为:( ).",
-    "A": "$f =y2-3y3$",
-    "B": "$f =y2-2y3 1 2 1 2$",
-    "C": "$f =y2+2y3$",
-    "D": "$f =y2-y3$",
+    "question": "矩阵 $A=\\begin{pmatrix}1&-1&0\\\\-1&3&0\\\\0&0&0\\end{pmatrix}$ 所对应的二次型的标准型为：（　　）。",
+    "A": "$f=y_1^2-3y_2^2$",
+    "B": "$f=y_1^2-2y_2^2$",
+    "C": "$f=y_1^2+2y_2^2$",
+    "D": "$f=y_1^2-y_2^2$",
     "answer": "C",
-    "analysis": "二次型的惯性定理. 可以用特征值法,易于计算$f(\\lambda)=\\lambda(\\lambda2-4\\lambda+2)$,两个正特征值,另一个为零, 所以标准型中应该有2个正系数平方项,只有C满足.或者用配方法,还原为二次型$f =x 1 2-2x 1 x 2 +3x 2 2 =(x 1 -x 2 )2+2x 2 2,$变量替换后得$f =y 1 2+2y 2 2$.",
+    "analysis": "二次型的惯性定理。特征方程 $f(\\lambda)=\\lambda(\\lambda^2-4\\lambda+2)$，有两个正特征值、另一个为零，所以标准型中应有 2 个正系数平方项，只有 C 满足。或用配方法：$f=x_1^2-2x_1x_2+3x_2^2=(x_1-x_2)^2+2x_2^2$，变量替换后得 $f=y_1^2+2y_2^2$。故选 C。",
     "id": 499,
-    "bigSubject": "公共基础",
-    "yearQnum": 20
-  },
-  {
-    "year": "2018",
-    "smallSubject": "概率论与数理统计",
-    "question": "已知事件A,B相互独立,且$P(A )=0.4,P(B$)=0.5, 则$P(A\\cup B)=$:( ).",
-    "A": "0.6",
-    "B": "0.7",
-    "C": "0.8",
-    "D": "0.9",
-    "answer": "C",
-    "analysis": "用独立性计算并事件的概率. 显然$P(A)=0.6,P(B)=0.5,$则$P(A\\cup B)=P(A)+P(B)-P(AB)=P(A)+P(B)- P(A)P(B)=0.8$.",
-    "id": 500,
     "bigSubject": "公共基础",
     "yearQnum": 21
   },
   {
     "year": "2018",
     "smallSubject": "概率论与数理统计",
-    "question": "设随机变量X的分布函数为$F(x)=\\begin{cases}x^3, & 0<x\\leq1\\\\1, & x>1\\end{cases}$,则数学期望:( ).",
-    "A": "$\\int_0^1 3x^2 dx$",
-    "B": "$\\int_0^1 3x^3 dx$",
-    "C": "$\\int_0^1 \\frac{x^4}{4} dx+\\int_1^{+\\infty} x dx$",
-    "D": "$\\int_0^{+\\infty} 3x^3 dx$",
-    "answer": "B",
-    "analysis": "分布函数与密度函数的关系，随机变量期望的计算. 将$F(x)$求导得到密度函数$f(x)=\\begin{cases}3x^2, & 0<x<1\\\\0, & \\text{其他}\\end{cases}$，则$E(X)=\\int_{-\\infty}^{+\\infty}xf(x)dx=\\int_0^1 3x^3dx$。",
-    "id": 501,
+    "question": "已知事件 $A$、$B$ 相互独立，且 $P(\\overline{A})=0.4$，$P(\\overline{B})=0.5$，则 $P(A\\cup B)$ 为：（　　）。",
+    "A": "0.6",
+    "B": "0.7",
+    "C": "0.8",
+    "D": "0.9",
+    "answer": "C",
+    "analysis": "用独立性计算并事件的概率。显然 $P(A)=0.6$，$P(B)=0.5$，则 $P(A\\cup B)=P(A)+P(B)-P(AB)=P(A)+P(B)-P(A)P(B)=0.6+0.5-0.3=0.8$。故选 C。",
+    "id": 500,
     "bigSubject": "公共基础",
     "yearQnum": 22
+  },
+  {
+    "year": "2018",
+    "smallSubject": "概率论与数理统计",
+    "question": "设随机变量 $X$ 的分布函数为 $F(x)=\\begin{cases}0,&x\\le 0\\\\x^3,&0<x\\le 1\\\\1,&x>1\\end{cases}$，则数学期望为：（　　）。",
+    "A": "$\\int_0^1 3x^2\\,dx$",
+    "B": "$\\int_0^1 3x^3\\,dx$",
+    "C": "$\\int_0^1 \\dfrac{x^4}{4}\\,dx+\\int_1^{+\\infty} x\\,dx$",
+    "D": "$\\int_0^{+\\infty} 3x^3\\,dx$",
+    "answer": "B",
+    "analysis": "分布函数与密度函数的关系，随机变量期望的计算。将 $F(x)$ 求导得到密度函数 $f(x)=3x^2$（$0<x<1$，其余为 0），则 $E(X)=\\int_{-\\infty}^{+\\infty} xf(x)\\,dx=\\int_0^1 3x^3\\,dx$。故选 B。",
+    "id": 501,
+    "bigSubject": "公共基础",
+    "yearQnum": 23
   },
   {
     "year": "2018",
@@ -6983,7 +6983,7 @@
     "analysis": "$1 1 1 1 1  + + + +\\alpha+β =1 \\Rightarrow \\alpha+β =$,$6 9 18 3 3 X$\\$Y 1 2 3 P(X =i) 1 1 1 + + 1 1 1 6 9 18 1 6 9 18 1 = 3 1 2 2 \\alpha β 3 3 1 1 1 1 1 P(Y =j) + = 1 6 3 2 3 6$独立性要求$P(X =i)P(Y =j)=P(X =i,Y =j)$,从上图要检测每个位置都满足要求.比方 1 1 1 1 1 2 1 1 1 1 1 1 1 说, = $\\times$ ,所以$+\\alpha =$,所以$\\alpha =$,则β = ,或者 $= \\times , +β =$,得$β =$. 9 3 3 9 3 9 9 18 3 6 18 6 9",
     "id": 502,
     "bigSubject": "公共基础",
-    "yearQnum": 23
+    "yearQnum": 24
   },
   {
     "year": "2018",
@@ -6997,7 +6997,7 @@
     "analysis": "能量按自由度均分定理和气体分子的平动自由度 3 根据能量均分定理和气体分子的平动自由度,平均动能公式w = KT,气体分子的 2 平均平动动能只与温度有关.",
     "id": 503,
     "bigSubject": "公共基础",
-    "yearQnum": 24
+    "yearQnum": 25
   },
   {
     "year": "2018",
@@ -7011,7 +7011,7 @@
     "analysis": "分子的平均自由程 根据分子的平均自由程公式,平均自由程和分子数密度n相关,n=N/V,对于lmol 氦气,其气体分子总数等于阿伏伽德罗常数,也就是说N是定值,所以自由程只决定于体 积 V.",
     "id": 504,
     "bigSubject": "公共基础",
-    "yearQnum": 25
+    "yearQnum": 26
   },
   {
     "year": "2018",
@@ -7025,7 +7025,7 @@
     "analysis": "热力学第一定律和热力学第二定律 本题目理想气体和单一热源接触做等温膨胀,温度没有发生变化,即内能不变,因 此吸收的热量全部用来对外做功,符合热力学第一定律.热力学第二定律(开尔文表述)是: 不可能从单一热源吸收热量,使之完全变成功,而不引起 其他变化,题目中气体体积变化,没有违反-不引起其他变化\\|的表述,所以 不违反热力学第二定律.",
     "id": 505,
     "bigSubject": "公共基础",
-    "yearQnum": 26
+    "yearQnum": 27
   },
   {
     "year": "2018",
@@ -7039,7 +7039,7 @@
     "analysis": "理想气体内能 理想气体内能只和温度相关,题目中两个平衡状态的温度相等,表示内能相等.",
     "id": 506,
     "bigSubject": "公共基础",
-    "yearQnum": 27
+    "yearQnum": 28
   },
   {
     "year": "2018",
@@ -7053,7 +7053,7 @@
     "analysis": "平面简谐波的波动方程 将题目中所给已知条件带入平面简谐波的波动方程,可得振动位移为y=0.01$\\times$ cos$10\\pi\\times(25\\times0.1-2)=0.01$cos$5\\pi=-0.01$m.",
     "id": 507,
     "bigSubject": "公共基础",
-    "yearQnum": 28
+    "yearQnum": 29
   },
   {
     "year": "2018",
@@ -7067,7 +7067,7 @@
     "analysis": "平面简谐波的特征量$2\\pi$波动方程中得出w=$50\\pi$,根据周期公式T= 得出周期为0.04s,振幅根据表达式 q 判断为0.02m.",
     "id": 508,
     "bigSubject": "公共基础",
-    "yearQnum": 29
+    "yearQnum": 30
   },
   {
     "year": "2018",
@@ -7081,7 +7081,7 @@
     "analysis": "波的能量 当质元处在平衡位置时,质元的动能和势能及总能量均达到最大值;当质元在最大 位移时,质元的动能和势能及总能量均为零,势能大小和形变量平方正比,势能最大的地方 形变量也就最大.",
     "id": 509,
     "bigSubject": "公共基础",
-    "yearQnum": 30
+    "yearQnum": 31
   },
   {
     "year": "2018",
@@ -7095,7 +7095,7 @@
     "analysis": "双缝干涉 空气中双缝干涉的光程差$\\delta=$r -r ,决定明纹的条件为光程差$\\delta=\\pm k\\lambda,k= 0,1,2, 2 1 k=0$时为中央明纹$, \\delta=0$,两缝各覆盖一块厚度为D,折射率分别为n 和n (n >n )的的 1 2 2 1 透明薄片后$\\delta=0+$d(n -n ) . 2 1",
     "id": 510,
     "bigSubject": "公共基础",
-    "yearQnum": 31
+    "yearQnum": 32
   },
   {
     "year": "2018",
@@ -7109,7 +7109,7 @@
     "analysis": "等厚干涉 牛顿环为等厚干涉,等厚干涉条纹级次(k的值)和厚度是相对应的,远离之前接 触点对应的条纹级次小,离接触点远的位置条纹级次大,在透镜远离平面玻璃的过程中,原 来接触点位置对应的厚度增加,干涉条纹级次增加,相当于原来外侧位置对应的级次向中心 移动,看到的图像就是条纹向中心收缩.",
     "id": 511,
     "bigSubject": "公共基础",
-    "yearQnum": 32
+    "yearQnum": 33
   },
   {
     "year": "2018",
@@ -7123,7 +7123,7 @@
     "analysis": "相位差和光程差 根据相位差和光程差的关系$\\Delta\\phi=2\\pi$f,式中$\\lambda$为光所在的实际介质中的波长,介 $\\lambda$' 质中波长和真空波长关系为n=$ \\lambda$相位差为$3\\pi$代入即可得答案. $\\lambda$'",
     "id": 512,
     "bigSubject": "公共基础",
-    "yearQnum": 33
+    "yearQnum": 34
   },
   {
     "year": "2018",
@@ -7137,7 +7137,7 @@
     "analysis": "光的干涉 根据亮纹公式(加强)2nh=(2k$+1)\\lambda/2$,其中k=0,1,2,3,计算得出k=2时波长 在可见光范围波长为480nm.",
     "id": 513,
     "bigSubject": "公共基础",
-    "yearQnum": 34
+    "yearQnum": 35
   },
   {
     "year": "2018",
@@ -7151,7 +7151,7 @@
     "analysis": "光的干涉 根据公式$\\theta=\\lambda/2$n1可得n=$\\lambda/2$n$\\theta$,代入已知条件计算得到n=1.53.",
     "id": 514,
     "bigSubject": "公共基础",
-    "yearQnum": 35
+    "yearQnum": 36
   },
   {
     "year": "2018",
@@ -7165,7 +7165,7 @@
     "analysis": "电子排布与周期律 该元素原子的电子排布应为1s22s22p63s23p64s2,第四周期,第IIA族.",
     "id": 515,
     "bigSubject": "公共基础",
-    "yearQnum": 36
+    "yearQnum": 37
   },
   {
     "year": "2018",
@@ -7179,7 +7179,7 @@
     "analysis": "离子间作用力-离子极化 电荷越多,半径越小极化力越强,Li+半径最小,极化力最大.",
     "id": 516,
     "bigSubject": "公共基础",
-    "yearQnum": 37
+    "yearQnum": 38
   },
   {
     "year": "2018",
@@ -7192,20 +7192,6 @@
     "answer": "A",
     "analysis": "盐类的水解 $NH_{4}Cl$是强酸弱碱盐,水解溶液呈酸性;$NaCl$溶液呈中性;$HOAc$是弱酸,$NaOAc$ 是弱酸强碱盐,水解溶液呈碱性;$H_{3}PO_{4}$是中强酸,水解溶液呈碱性;虽然$H_{3}PO_{4}$比$HOAc$ 酸性强,但磷酸有三个可电离的氢,第三电离度非常小,磷酸钠水解主要对应第三电离,水 解程度大,PH高.",
     "id": 517,
-    "bigSubject": "公共基础",
-    "yearQnum": 38
-  },
-  {
-    "year": "2018",
-    "smallSubject": "反应速率与化学平衡",
-    "question": "某温度下在密闭容器中进行如下反应2A(g)+B(g)$\\leftrightarrow$2C(g),反应开始时 p",
-    "A": "0.1",
-    "B": "0.4",
-    "C": "0.001",
-    "D": "0.002",
-    "answer": "A",
-    "analysis": "化学平衡常数的计算  $2A(g) + B(g) \\leftrightarrow 2C(g)$ 始态分压/ kPa 300 300 0 平衡分压$/ kPa 300-100 300-100/2 100 K\\ominus = [jc/j\\ominus] 2 =0.1,p\\ominus=100 kPa. [ja/j\\ominus] 2 \\times[jb/j\\ominus] 1$",
-    "id": 518,
     "bigSubject": "公共基础",
     "yearQnum": 39
   },
@@ -7226,16 +7212,16 @@
   {
     "year": "2018",
     "smallSubject": "氧化还原与电化学",
-    "question": "酸性介质中$,E\\oslash(C10;/C10;)=1.19V,E\\oslash(C10;/C1;)=1.39V, 4 3 3 E\\oslash(C10;/C1;)=1.49V,E\\oslash(C1 /$Cl^-)=1.36V,以上电对中各氧化态物质氧化能力最强的 2 是( ).",
+    "question": "酸性介质中，$\\mathrm{E^\\ominus}(\\mathrm{ClO_4^-}/\\mathrm{ClO_3^-})=1.19\\mathrm{V}$，$\\mathrm{E^\\ominus}(\\mathrm{ClO_3^-}/\\mathrm{Cl^-})=1.39\\mathrm{V}$，$\\mathrm{E^\\ominus}(\\mathrm{ClO^-}/\\mathrm{Cl^-})=1.49\\mathrm{V}$，$\\mathrm{E^\\ominus}(\\mathrm{Cl_2}/\\mathrm{Cl^-})=1.36\\mathrm{V}$，以上电对中各氧化态物质氧化能力最强的是（　　）。",
     "A": "$\\mathrm{ClO_4^-}$",
     "B": "$\\mathrm{ClO_3^-}$",
     "C": "$\\mathrm{HClO}$",
     "D": "$\\mathrm{Cl_2}$",
     "answer": "C",
-    "analysis": "电极电势的应用 比较氧化剂和还原剂的相对强弱:E$\\oslash$值越小,电对中的还原态物质越易失去电子, 是越强的还原剂;E$\\oslash$值越大,电对中的氧化态物质是越强的氧化剂.",
+    "analysis": "电极电势的应用。比较氧化剂和还原剂的相对强弱：$\\mathrm{E^\\ominus}$ 值越小，电对中的还原态物质越易失去电子，是越强的还原剂；$\\mathrm{E^\\ominus}$ 值越大，电对中的氧化态物质是越强的氧化剂。$\\mathrm{E^\\ominus}$ 最大者为 1.49V，其氧化态物质为 HClO。故选 C。",
     "id": 520,
     "bigSubject": "公共基础",
-    "yearQnum": 41
+    "yearQnum": 42
   },
   {
     "year": "2018",
@@ -7249,7 +7235,7 @@
     "analysis": "标准摩尔生成焓$\\Delta$ H j$\\ominus$ ` g $\\Delta$ H j$\\ominus$标准摩尔生成焓:标准状态下,由最稳定纯态单质生成单位物质量的某物质 ` g 的焓变.",
     "id": 521,
     "bigSubject": "公共基础",
-    "yearQnum": 42
+    "yearQnum": 43
   },
   {
     "year": "2018",
@@ -7263,7 +7249,7 @@
     "analysis": "有机物的典型反应 银镜反应,用于鉴别醛,甲酸甲酯H$CO$OCH ,乙酸乙酯CH $CO$OCH ,乙酸乙酯中 3 3 3 没有醛基.",
     "id": 522,
     "bigSubject": "公共基础",
-    "yearQnum": 43
+    "yearQnum": 44
   },
   {
     "year": "2018",
@@ -7277,21 +7263,21 @@
     "analysis": "高分子化合物的分类. 蔗糖,橡胶和纤维素分别来源于天然产物,如甘蔗,橡胶树,木材或者秸秆等,而 塑料则是人工合成的高分子材料.",
     "id": 523,
     "bigSubject": "公共基础",
-    "yearQnum": 44
+    "yearQnum": 45
   },
   {
     "year": "2018",
     "smallSubject": "有机化学",
-    "question": "某不饱和烃催化剂加氢后得到(CH ) CHCH CH ,该不饱和烃是( ). 3 2 2 3,",
-    "A": "1-戊块",
+    "question": "某不饱和烃催化剂加氢后得到 $(\\mathrm{CH_3})_2\\mathrm{CHCH_2CH_3}$，该不饱和烃是（　　）。",
+    "A": "1-戊炔",
     "B": "3-甲基-1-丁炔",
     "C": "2-戊炔",
-    "D": "1, 2-戊二烯",
+    "D": "1,2-戊二烯",
     "answer": "B",
-    "analysis": "有机物的命名,有机物的典型反应. 不饱和烃加氢后的产物是 2-甲基丁烷,是一个带支链的分子,而选项中 A,C 和 D都是直链分子,无论怎么加氢都不会使它们变成带支链的产物,通过排除法就可以选出答 案.另外 3-甲基-1-丁炔和产物 2-甲基丁烷分子结构上唯一的区别就是多了个三键,因此可 以通过加氢实现转化. 催化剂 H 2 CH 3 CH C CH H 2 CH 3 CH C CH 3 CH 3 CH 3",
+    "analysis": "有机物的命名，有机物的典型反应。不饱和烃加氢后的产物是 2-甲基丁烷，是一个带支链的分子，而选项中 A、C 和 D 都是直链分子，无论怎么加氢都不会变成带支链的产物，通过排除法可选出答案。另外 3-甲基-1-丁炔和产物 2-甲基丁烷分子结构上唯一的区别就是多了个三键，可以通过加氢实现转化。故选 B。",
     "id": 524,
     "bigSubject": "公共基础",
-    "yearQnum": 45
+    "yearQnum": 46
   },
   {
     "year": "2018",
@@ -7305,35 +7291,35 @@
     "analysis": "力在直角坐标轴上的投影. 由题可知,F =Fcos$\\alpha=$F,则$\\alpha=0$,即力F与x轴平行,但与x轴共面的任一 r 轴与x轴之间的夹角$\\beta$不确定,故Fcos$\\beta$也不一定.",
     "id": 525,
     "bigSubject": "公共基础",
-    "yearQnum": 46
-  },
-  {
-    "year": "2018",
-    "smallSubject": "静力学",
-    "question": "在图示平面力系中,已知力F =F =F =10N, a=lm,力偶的转向如图示, 1 2 3 力偶矩的大小为M =M =10Nm,则力系向O点简化的主矢,主矩为( ). 1 2<br><img src=\"/images/id570_2018_48_crop.png\" style=\"max-width:100%;\">",
-    "A": "F =30N(方向铅垂向上$),M =10Nm(\\curvearrowright) R 0$",
-    "B": "F =30N(方向铅垂向上$),M =10Nm(\\curvearrowleft) R 0$",
-    "C": "F =50N(方向铅垂向上$),M =10Nm(\\curvearrowright) R 0$",
-    "D": "F =10N(方向铅垂向上$),M =10Nm(\\curvearrowleft)$",
-    "answer": "A",
-    "analysis": "主矢,主矩的计算. 根据力向一点平移定理,力F 平移到O点得到力$F_{1}$和一个力偶$M =M (F )=10\\times 1 1 0 1 2a($瞬时针);力F 平移到O点得到力F 和一个力偶 $3 3 M =M (F )=10\\times a($逆时针),故主矢为F =F +F +F =30N(方向铅垂向上),主 3 0 3 R 1 2 3 矩为M =M +M (F )-M -M (F )=10+20a-10-10a=10a=10Nm(瞬时针). 0 1 0 1 2 0 3",
-    "id": 526,
-    "bigSubject": "公共基础",
     "yearQnum": 47
   },
   {
     "year": "2018",
     "smallSubject": "静力学",
-    "question": "在图示结构中,己知AB=AC=2r,重物F ,其余自重不计.则支座A的约束力为 j ( ). 1<br><img src=\"/images/id571_2018_49_3.png\" style=\"max-width:100%;\">",
-    "A": "F =0",
-    "B": "$F = F (\\leftarrow) A A 2 j 3 3$",
-    "C": "$F = F (\\rightarrow)$",
-    "D": "$F = F (\\leftarrow)$",
-    "answer": "D",
-    "analysis": "静力学平衡方程的应用. 以整体作为研究对象,其受力图如下$: \\sum M (F)=0F \\times2r-F \\times3r=0$ 得:F = 3 F C c A j A j 2",
-    "id": 527,
+    "question": "在图示平面力系中，已知力 $F_1=F_2=F_3=10\\mathrm{N}$，$a=1\\mathrm{m}$，力偶的转向如图示，力偶矩的大小为 $M_1=M_2=10\\mathrm{N\\cdot m}$，则力系向 O 点简化的主矢、主矩为（　　）。",
+    "A": "$F_R=30\\mathrm{N}$（方向铅垂向上），$M_0=10\\mathrm{N\\cdot m}$（瞬时针）",
+    "B": "$F_R=30\\mathrm{N}$（方向铅垂向上），$M_0=10\\mathrm{N\\cdot m}$（逆时针）",
+    "C": "$F_R=50\\mathrm{N}$（方向铅垂向上），$M_0=10\\mathrm{N\\cdot m}$（瞬时针）",
+    "D": "$F_R=10\\mathrm{N}$（方向铅垂向上），$M_0=10\\mathrm{N\\cdot m}$（逆时针）",
+    "answer": "A",
+    "analysis": "主矢、主矩的计算。根据力向一点平移定理，力 $F_1$ 平移到 O 点得到力 $F_1$ 和一个力偶 $M_0(F_1)=10\\times 2a=20\\mathrm{N\\cdot m}$（顺时针）；力 $F_3$ 平移到 O 点得到力 $F_3$ 和一个力偶 $M_0(F_3)=10\\times a=10\\mathrm{N\\cdot m}$（逆时针）。故主矢为 $F_R=F_1+F_2+F_3=30\\mathrm{N}$（方向铅垂向上），主矩为 $M_0=M_1+M_0(F_1)-M_2-M_0(F_3)=10+20-10-10=10\\mathrm{N\\cdot m}$（顺时针）。故选 A。",
+    "id": 526,
     "bigSubject": "公共基础",
     "yearQnum": 48
+  },
+  {
+    "year": "2018",
+    "smallSubject": "静力学",
+    "question": "在图示结构中，已知 $AB=AC=2r$，重物 $F_P$，其余自重不计。则支座 A 的约束力为（　　）。",
+    "A": "$F_A=0$",
+    "B": "$F_A=\\dfrac{1}{2}F_P(\\leftarrow)$",
+    "C": "$F_A=\\dfrac{3}{2}F_P(\\rightarrow)$",
+    "D": "$F_A=\\dfrac{3}{2}F_P(\\leftarrow)$",
+    "answer": "D",
+    "analysis": "静力学平衡方程的应用。以整体作为研究对象，对 C 点取矩：$\\sum M_C=0$，$F_A\\times 2r-F_P\\times 3r=0$，得 $F_A=\\dfrac{3}{2}F_P$，方向水平向左。故选 D。",
+    "id": 527,
+    "bigSubject": "公共基础",
+    "yearQnum": 49
   },
   {
     "year": "2018",
@@ -7347,7 +7333,7 @@
     "analysis": "零杆的判断及应用. 由图可知节点C为-T\\|型节点,故BC杆为零杆,即F =0. BC",
     "id": 528,
     "bigSubject": "公共基础",
-    "yearQnum": 49
+    "yearQnum": 50
   },
   {
     "year": "2018",
@@ -7361,7 +7347,7 @@
     "analysis": "速度和加速度定义. $v=\\frac{ds}{dt}=4t^3-9t^2+4t=4\\times2^3-9\\times2^2+4\\times2=4m/s$;$a=\\frac{dv}{dt}=12t^2-18t+4=12\\times2^2-18\\times2+4=16m/s^2$.",
     "id": 529,
     "bigSubject": "公共基础",
-    "yearQnum": 50
+    "yearQnum": 51
   },
   {
     "year": "2018",
@@ -7375,21 +7361,21 @@
     "analysis": "法向加速度的计算公式. a = p2 = 152 =45m/s2 h$\\rho 5$",
     "id": 530,
     "bigSubject": "公共基础",
-    "yearQnum": 51
+    "yearQnum": 52
   },
   {
     "year": "2018",
     "smallSubject": "运动学",
-    "question": "四连杆机构如图所示.已知曲柄O A长为 r,且O A=O B,O O =AB=2b, 1 1 2 1 2 角速度为$\\omega,$ 角加速度为$\\alpha.$则M点的速度,切向和法向加速度的大小为( ).<br><img src=\"/images/id615_2018_53_2.png\" style=\"max-width:100%;\">",
-    "A": "v =b$\\omega;\\alpha$h =b$\\omega^{2};\\alpha\\tau = b\\alpha$",
-    "B": "v =b$\\omega,\\alpha$h =r$\\omega^{2};\\alpha\\tau = r\\alpha M M M M M M$",
-    "C": "v =r$\\omega;\\alpha$h =r$\\omega^{2};\\alpha\\tau = r\\alpha$",
-    "D": "v =r$\\omega;\\alpha$h =b$\\omega^{2};\\alpha\\tau = b\\alpha$",
+    "question": "四连杆机构如图所示。已知曲柄 $O_1A$ 长为 $r$，且 $O_1A=O_2B$，$O_1O_2=AB=2b$，角速度为 $\\omega$，角加速度为 $\\alpha$。则 M 点的速度、切向和法向加速度的大小为（　　）。",
+    "A": "$v_M=b\\omega$；$a_M^{\\mathrm n}=b\\omega^2$；$a_M^{\\tau}=b\\alpha$",
+    "B": "$v_M=b\\omega$，$a_M^{\\mathrm n}=r\\omega^2$；$a_M^{\\tau}=r\\alpha$",
+    "C": "$v_M=r\\omega$；$a_M^{\\mathrm n}=r\\omega^2$；$a_M^{\\tau}=r\\alpha$",
+    "D": "$v_M=r\\omega$；$a_M^{\\mathrm n}=b\\omega^2$；$a_M^{\\tau}=b\\alpha$",
     "answer": "C",
-    "analysis": "平移的特征,定轴转动的速度,切向和法向加速度的计算. 由图可知O A绕O 点作定轴转动,O B绕O 点作定轴转动,物块ABCD作平移运动, 1 1 2 2 故 M 点的速度,切向和法向加速度与 A 点完全相同,则:v =v =r$\\omega;\\alpha$h=$\\alpha$hA= M A M r$\\omega^{2};\\alpha\\tau =\\alpha\\tau = r\\alpha. M A$",
+    "analysis": "刚体基本运动。因 $O_1A=O_2B$ 且 $O_1O_2=AB$，该机构为平行四边形机构，连杆 AB（含 M 点）作平移，M 点与 A 点的速度、加速度相同：$v_M=r\\omega$，$a_M^{\\mathrm n}=r\\omega^2$，$a_M^{\\tau}=r\\alpha$。故选 C。",
     "id": 531,
     "bigSubject": "公共基础",
-    "yearQnum": 52
+    "yearQnum": 53
   },
   {
     "year": "2018",
@@ -7403,7 +7389,7 @@
     "analysis": "动静法,摩擦力和向心力的计算及应用. 设速度为v,则向心加速度为:a = p2 向心力为F=ma =m p2 : h h l l 物块的摩檫力为:F=$\\mu$mg 要使物块不产生滑动,则:F =F,即:$\\mu m g=m p2 m r l$ 得:v=$\\sqrt\\mu$gr.",
     "id": 532,
     "bigSubject": "公共基础",
-    "yearQnum": 53
+    "yearQnum": 54
   },
   {
     "year": "2018",
@@ -7417,7 +7403,7 @@
     "analysis": "外力做功. W=F$\\cdot S$由题意,重力与位移不在同一方向,故重力做功为 0; 摩擦力做功:W=0.3$\\times$10$\\times$4=12N$\\cdot m.$摩擦力做负功,W=-12.",
     "id": 533,
     "bigSubject": "公共基础",
-    "yearQnum": 54
+    "yearQnum": 55
   },
   {
     "year": "2018",
@@ -7431,7 +7417,7 @@
     "analysis": "动量矩定理的应用. 设滑轮的转动惯量为Jz,角速度为$\\omega$,则: 对于1图: 动量矩为:L =J$\\omega,$外力对转轴的矩为:M =1$\\times r=r t Z Z$ 根据动量矩定理:^ ^ L n Z =J Z$\\alpha 1 =$M Z =r 即:$\\alpha 1 =$J l z 对于 2图: 动量矩为:L =J$\\omega+$m $\\omega r2+m\\omega r2$ 外力对转轴的矩为:M =2$\\times r-1 \\times r=r Z Z 2 3 Z$ 根据动量矩定理: ^ ^ L n Z =(J Z +m 2 r2+m 3 r$2)\\alpha 2 =$M t =r$\\alpha 2 =$Jz:g2l l 2:g3l2 对于 3图: 动量矩为:L =J$\\omega+$m $\\omega r2$外力对转轴的矩为:M =1$\\times r=r Z Z 3 Z$ 根据动量矩定理:^Lz =(J +m r$2)\\alpha =$M =r Z 3 3 Z ^n l 即:$\\alpha 3 =$JZ:g3l2 故:$\\alpha 1 >\\alpha 3 >\\alpha 2$.",
     "id": 534,
     "bigSubject": "公共基础",
-    "yearQnum": 55
+    "yearQnum": 56
   },
   {
     "year": "2018",
@@ -7445,7 +7431,7 @@
     "analysis": "惯性力主矢,主矩及动静法的应用. OA杆对O轴的转动惯量为J = gL2 +m$\\times$. L / 2 = gL2 ,设图示水平位置静止释放 0 12 2 3 瞬间OA杆的角速度为$\\omega,$则OA杆对O轴的动量矩为:L =J$\\omega=$gL$2 \\omega$O O 3 则根据动量矩定理:^LO = gL$2 \\alpha=$mg L 得:$\\alpha= 3$a .设OA杆的形心为C,取OA杆为研 ^n 3 2 2L L 3ga 究对象,画出其受力图如下:其中惯性力主矢F =ma =ma =m$\\alpha=$(a 为质心C 1 ] ]l 2 4 ] 点的全加速度,a 为质心C的 ]l 切向加速度,因为a = L w2 =0),方向与a 相反,即向上,惯性力主矩 ]h 2 ] M =J $\\alpha$与$\\alpha$相反,J 为均质细杆AB对C点的转动惯量. IC C ] 故轴承O施加于杆OA的附加动反力(动反力是指由惯性力主矢所引起的约 3ga 束力,静反力是指由主动力mg所引起的约束力)为 向下. 4",
     "id": 535,
     "bigSubject": "公共基础",
-    "yearQnum": 56
+    "yearQnum": 57
   },
   {
     "year": "2018",
@@ -7459,12 +7445,12 @@
     "analysis": "自由振动的固有圆频率公式. 图(A)的固有圆频率:$\\omega_0=\\sqrt{\\frac{k}{m}}$;图(B)的固有圆频率:$\\omega_0=\\sqrt{\\frac{k}{2m}}$.",
     "id": 536,
     "bigSubject": "公共基础",
-    "yearQnum": 57
+    "yearQnum": 58
   },
   {
     "year": "2018",
     "smallSubject": "轴向拉伸与压缩",
-    "question": "等截面杆,轴向受力如图.轩的最大轴力是( ).<br><img src=\"/images/id704_2018_59_2.jpeg\" style=\"max-width:100%;\">",
+    "question": "等截面杆,轴向受力如图.杆的最大轴力是( ).<br><img src=\"/images/id704_2018_59_2.jpeg\" style=\"max-width:100%;\">",
     "A": "8kN",
     "B": "5kN",
     "C": "3kN",
@@ -7473,7 +7459,7 @@
     "analysis": "轴向拉伸:截面法求轴力 F =-3kN,F =5kN. NAB NBC",
     "id": 537,
     "bigSubject": "公共基础",
-    "yearQnum": 58
+    "yearQnum": 59
   },
   {
     "year": "2018",
@@ -7487,7 +7473,7 @@
     "analysis": "轴向拉伸:轴向拉伸变形. ;FL FL FL F =-F,F =F.$\\Delta l= + = NAB NBC 2EA EA 2EA$",
     "id": 538,
     "bigSubject": "公共基础",
-    "yearQnum": 59
+    "yearQnum": 60
   },
   {
     "year": "2018",
@@ -7501,54 +7487,54 @@
     "analysis": "挤压应力$\\sigma_{bs}=\\frac{F}{A_{bs}}=\\frac{F}{\\pi d^2/4}=\\frac{1000\\times10^3}{\\pi\\times0.5^2/4}=5.09\\mathrm{MPa}$。答案选【A】",
     "id": 539,
     "bigSubject": "公共基础",
-    "yearQnum": 60
+    "yearQnum": 61
   },
   {
     "year": "2018",
     "smallSubject": "扭转",
-    "question": "实心圆抽受扭, 若将轴的直径减小一半,则扭转角是原来的( ).",
+    "question": "实心圆轴受扭，若将轴的直径减小一半，则扭转角是原来的（　　）。",
     "A": "2倍",
     "B": "4倍",
     "C": "8倍",
     "D": "16倍",
     "answer": "D",
-    "analysis": "圆截面极惯性矩公式,单位长度的扭转角公式及其应用. 32T I j=$ \\pi 3$^$2 4 \\theta=$G T IP , 所以$: \\theta \\theta 1 2 = \\pi \\pi 3$d 2 d 2 T 1 4 4 =. 1 2 / 4 = 1 1 6 .",
+    "analysis": "圆截面极惯性矩公式，扭转角公式及其应用。扭转角 $\\varphi=\\dfrac{Tl}{GI_p}$，其中 $I_p=\\dfrac{\\pi d^4}{32}$。直径减小一半时 $I_p$ 变为原来的 $\\dfrac{1}{16}$，故扭转角是原来的 16 倍。故选 D。",
     "id": 540,
-    "bigSubject": "公共基础",
-    "yearQnum": 61
-  },
-  {
-    "year": "2018",
-    "smallSubject": "截面几何性质",
-    "question": "图示截面对z轴的惯性矩I 为( ). t<br><img src=\"/images/id755_2018_63_crop.png\" style=\"max-width:100%;\">",
-    "A": "2倍",
-    "B": "4倍",
-    "C": "8倍",
-    "D": "16倍",
-    "answer": "A",
-    "analysis": "圆截面极惯性矩公式,单位长度的扭转角公式及其应用. 图示圆截面对z轴的惯性矩为:I=$ \\pi$^4 Z 64 图示矩形截面对z轴的惯性矩为:I t = \\b3 +bh$\\times$. b / 2 = \\b3 (根据移轴定理) 12 2 3 图示截面对z轴的惯性矩为:I=$ \\pi$^4 - \\b3 Z 64 3",
-    "id": 541,
     "bigSubject": "公共基础",
     "yearQnum": 62
   },
   {
     "year": "2018",
-    "smallSubject": "材料力学",
-    "question": "材料相同的两根矩形截面悬臂梁叠合在一起，接触面之间可以相对滑动且无摩擦力。设两梁的厚度均为$h$，宽度均为$b$，梁长为$l$，自由端受集中力$F$，则两梁最大正应力之比$\\frac{\\sigma_1}{\\sigma_2}$为（　　）。",
-    "A": "1",
-    "B": "2",
-    "C": "4",
-    "D": "8",
+    "smallSubject": "截面几何性质",
+    "question": "图示截面对 z 轴的惯性矩 $I_z$ 为（　　）。<br><img src=\"/images/id755_2018_63_crop.png\" style=\"max-width:100%;\">",
+    "A": "$I_z=\\dfrac{\\pi d^4}{64}-\\dfrac{bh^3}{3}$",
+    "B": "$I_z=\\dfrac{\\pi d^4}{64}-\\dfrac{bh^3}{12}$",
+    "C": "$I_z=\\dfrac{\\pi d^4}{32}-\\dfrac{bh^3}{6}$",
+    "D": "$I_z=\\dfrac{\\pi d^4}{64}-\\dfrac{13bh^3}{12}$",
     "answer": "A",
-    "analysis": "两梁叠合且可相对滑动，各自独立承受荷载。每根梁承受的力为$F/2$，截面尺寸相同，因此最大正应力相同。答案选【A】",
-    "id": 542,
+    "analysis": "圆截面惯性矩公式与移轴定理。图示圆截面对 z 轴的惯性矩为 $I_z=\\dfrac{\\pi d^4}{64}$；图示矩形截面对 z 轴的惯性矩（z 轴过矩形上边缘）为 $I_z=\\dfrac{bh^3}{12}+bh\\times\\left(\\dfrac{h}{2}\\right)^2=\\dfrac{bh^3}{3}$（根据移轴定理）。故图示截面对 z 轴的惯性矩为 $I_z=\\dfrac{\\pi d^4}{64}-\\dfrac{bh^3}{3}$。故选 A。",
+    "id": 541,
     "bigSubject": "公共基础",
     "yearQnum": 63
   },
   {
     "year": "2018",
     "smallSubject": "材料力学",
-    "question": "图示圆轴的抗扭截面系数为$W_T$，切变模量为$G$。扭转变形后，圆轴表面$A$点处截取的单元体互相垂直的相邻边线改变了$\\gamma$角，如图所示。圆轴承受的扭矩是（ ）。<br><br><img src=\"/images/missing_2018_64.png\" style=\"max-width:100%\">",
+    "question": "材料相同的两根矩形截面悬臂梁叠合在一起，接触面之间可以相对滑动且无摩擦力。设两根梁的自由端共同承担集中力偶 m，弯曲后两根梁的挠曲线相同，则上面梁承担的力偶矩是（　　）。<br><img src=\"/images/id542_2018_65_stem.png\" style=\"max-width:100%;\">",
+    "A": "$m/9$",
+    "B": "$m/5$",
+    "C": "$m/3$",
+    "D": "$m/2$",
+    "answer": "A",
+    "analysis": "挠度公式及其应用。上面梁厚度为 $a$，$I_{z上}=\\dfrac{ba^3}{12}$；下面梁厚度为 $2a$，$I_{z下}=\\dfrac{b(2a)^3}{12}=\\dfrac{8ba^3}{12}$。由题意，上面梁和下面梁的挠度相同，则 $\\dfrac{m_上}{ba^3/12}=\\dfrac{m_下}{8ba^3/12}$，所以 $8m_上=m_下$，又 $m_上+m_下=m$，解得 $m_上=\\dfrac{m}{9}$。故选 A。",
+    "id": 542,
+    "bigSubject": "公共基础",
+    "yearQnum": 65
+  },
+  {
+    "year": "2018",
+    "smallSubject": "材料力学",
+    "question": "图示圆轴的抗扭截面系数为$W_T$，切变模量为$G$。扭转变形后，圆轴表面$A$点处截取的单元体互相垂直的相邻边线改变了$\\gamma$角，如图所示。圆轴承受的扭矩是（ ）。<br><br><img src=\"/images/id543_2018_64_stem.png\" style=\"max-width:100%\">",
     "A": "$T=G\\gamma W_T$",
     "B": "$T=\\frac{G\\gamma}{W_T}$",
     "C": "$T=\\frac{\\gamma}{G}W_T$",
@@ -7562,44 +7548,44 @@
   {
     "year": "2018",
     "smallSubject": "组合变形",
-    "question": "图示直径为 d 的圆轴,承受轴向拉力 F 和扭矩 T.按第三强度理论,危险截面 的相当应力$\\sigma$ 为( ). eq3<br><img src=\"/images/id821_2018_67_4.jpeg\" style=\"max-width:100%;\">",
-    "A": "$m/9$",
-    "B": "$m/5$",
-    "C": "$m/3$",
-    "D": "$m/2$",
-    "answer": "C",
-    "analysis": "拉扭组合变形,第三强度理论及其应用. 本题属拉扭组合变形,表面点的应力状态为:F产生的拉应力$\\sigma=\\frac{F}{A}=\\frac{4F}{\\pi d^2}$;最大切应力$\\tau=\\frac{T}{W_P}=\\frac{16T}{\\pi d^3}$. 根据应力状态分析:$\\sigma_{\\max},\\sigma_{\\min}=\\frac{\\sigma}{2}\\pm\\sqrt{\\left(\\frac{\\sigma}{2}\\right)^2+\\tau^2}$. 根据强度理论:$\\sigma_{eq3}=\\sigma_1-\\sigma_3=\\sigma_{max}-\\sigma_{min}=2\\sqrt{\\left(\\frac{\\sigma}{2}\\right)^2+\\tau^2}=\\sqrt{(\\sigma)^2+4\\tau^2}=\\sqrt{\\left(\\frac{4F}{\\pi d^2}\\right)^2+4\\left(\\frac{16T}{\\pi d^3}\\right)^2}$.",
-    "id": 544,
-    "bigSubject": "公共基础",
-    "yearQnum": 65
-  },
-  {
-    "year": "2018",
-    "smallSubject": "应力状态分析",
-    "question": "在图示4种应力状态中,最大切应力$\\tau$ 数值最大的应力状态是( ). g[r<br><img src=\"/images/id806_2018_68_1.jpeg\" style=\"max-width:100%;\">",
-    "A": "选项A",
-    "B": "选项B",
-    "C": "选项C",
-    "D": "选项D",
-    "answer": "D",
-    "analysis": "应力状态分析:最大切应力计算.$\\tau = \\sigma1;\\sigma3 max 2 \\sigma -\\sigma \\sigma 1 3$图 ( A$): \\sigma 1 =\\sigma,\\sigma 2 =\\sigma,\\sigma 3 =0,\\tau$r$1 = 2 = 2 \\sigma -\\sigma 1 3$图(B)$: \\sigma 1 =\\sigma,\\sigma 2 =0,\\sigma 3 =-\\sigma,\\tau$g=$ 2 =\\sigma \\sigma -\\sigma$图 (C$):\\sigma 1 =2\\sigma,\\sigma 2 =0,\\sigma 2 =-0.5\\sigma,\\tau$g[r=$ 1 2 3 =1.25\\sigma \\sigma -\\sigma 3$图(D)$: \\sigma 1 =3\\sigma,\\sigma 2 =\\sigma,\\sigma 3 =0,\\tau$r$<1 = 1 2 3 = 2 \\sigma$",
-    "id": 545,
-    "bigSubject": "公共基础",
-    "yearQnum": 66
-  },
-  {
-    "year": "2018",
-    "smallSubject": "组合变形",
-    "question": "图示圆轴固定端最上缘A点单元体的应力状态是( ).<br><img src=\"/images/q23/id546_stem.png\" style=\"max-width:100%;\" />",
+    "question": "图示直径为 d 的圆轴，承受轴向拉力 F 和扭矩 T。按第三强度理论，危险截面的相当应力 $\\sigma_{eq3}$ 为（　　）。<br><img src=\"/images/id821_2018_67_4.jpeg\" style=\"max-width:100%;\">",
     "A": "$\\sigma_{eq3}=\\dfrac{32\\sqrt{F^2+T^2}}{\\pi d^3}$",
     "B": "$\\sigma_{eq3}=\\dfrac{16\\sqrt{F^2+T^2}}{\\pi d^3}$",
     "C": "$\\sigma_{eq3}=\\sqrt{\\left(\\dfrac{4F}{\\pi d^2}\\right)^2+4\\left(\\dfrac{16T}{\\pi d^3}\\right)^2}$",
     "D": "$\\sigma_{eq3}=\\sqrt{\\left(\\dfrac{4F}{\\pi d^2}\\right)^2+4\\left(\\dfrac{32T}{\\pi d^3}\\right)^2}$",
     "answer": "C",
-    "analysis": "弯曲与扭转组合变形的应力状态. 此图为弯曲与扭转组合变形,力偶T在A点产生最大的切应力$\\tau$,力F在A电产 生最大拉应力$\\sigma$,所以A点处于复杂应力状态.",
-    "id": 546,
+    "analysis": "拉扭组合变形，第三强度理论及其应用。F 产生的拉应力 $\\sigma=\\dfrac{F}{A}=\\dfrac{4F}{\\pi d^2}$；最大切应力 $\\tau=\\dfrac{T}{W_P}=\\dfrac{16T}{\\pi d^3}$。根据第三强度理论：$\\sigma_{eq3}=\\sqrt{\\sigma^2+4\\tau^2}=\\sqrt{\\left(\\dfrac{4F}{\\pi d^2}\\right)^2+4\\left(\\dfrac{16T}{\\pi d^3}\\right)^2}$。故选 C。",
+    "id": 544,
     "bigSubject": "公共基础",
     "yearQnum": 67
+  },
+  {
+    "year": "2018",
+    "smallSubject": "应力状态分析",
+    "question": "在图示 4 种应力状态中，最大切应力 $\\tau_{\\max}$ 数值最大的应力状态是（　　）。<br><img src=\"/images/id806_2018_68_1.jpeg\" style=\"max-width:100%;\">",
+    "A": "图（A）",
+    "B": "图（B）",
+    "C": "图（C）",
+    "D": "图（D）",
+    "answer": "D",
+    "analysis": "应力状态分析：最大切应力计算。$\\tau_{\\max}=\\dfrac{\\sigma_1-\\sigma_3}{2}$。图（A）：$\\sigma_1=\\sigma$，$\\sigma_2=\\sigma$，$\\sigma_3=0$，$\\tau_{\\max}=\\dfrac{\\sigma}{2}$；图（B）：$\\sigma_1=\\sigma$，$\\sigma_2=0$，$\\sigma_3=-\\sigma$，$\\tau_{\\max}=\\sigma$；图（C）：$\\sigma_1=2\\sigma$，$\\sigma_2=0$，$\\sigma_3=-0.5\\sigma$，$\\tau_{\\max}=1.25\\sigma$；图（D）：$\\sigma_1=3\\sigma$，$\\sigma_2=\\sigma$，$\\sigma_3=0$，$\\tau_{\\max}=1.5\\sigma$。数值最大的是图（D）。故选 D。",
+    "id": 545,
+    "bigSubject": "公共基础",
+    "yearQnum": 68
+  },
+  {
+    "year": "2018",
+    "smallSubject": "组合变形",
+    "question": "图示圆轴固定端最上缘 A 点单元体的应力状态是（　　）。<br><img src=\"/images/id546_2018_69_stem.png\" style=\"max-width:100%;\"><br><img src=\"/images/id546_2018_69_opts.png\" style=\"max-width:100%;\">",
+    "A": "图（A）",
+    "B": "图（B）",
+    "C": "图（C）",
+    "D": "图（D）",
+    "answer": "C",
+    "analysis": "弯曲与扭转组合变形的应力状态。此图为弯曲与扭转组合变形，力偶 T 在 A 点产生最大的切应力 $\\tau$，力 F 在 A 点产生最大拉应力 $\\sigma$，所以 A 点处于复杂应力状态，单元体上为拉应力 $\\sigma$ 与切应力 $\\tau$ 的组合。故选 C。",
+    "id": 546,
+    "bigSubject": "公共基础",
+    "yearQnum": 69
   },
   {
     "year": "2018",
@@ -7613,7 +7599,7 @@
     "analysis": "压杆稳定:欧拉公式 图(A)为两端铰支压杆,其长度系数$\\mu=1$,当量长度$\\mu l=5m.$ 图(B)为一端固定,一端自由压杆,其长度系数$\\mu=2$,当量长度$\\mu l=6m.$ 图(c)为一端固定,一端铰支压杆,其长度系数$\\mu=0.7$,当量长度$\\mu1=4.2$m.$\\pi2$EI 而根据公式:F = 所以,F >F >F . ]l$(\\mu$L)2 ]l] cra crb",
     "id": 547,
     "bigSubject": "公共基础",
-    "yearQnum": 68
+    "yearQnum": 70
   },
   {
     "year": "2018",
@@ -7627,7 +7613,7 @@
     "analysis": "流体静压强及其特性. 压力表测出的是相对压强,测真空度的压力表叫真空表.",
     "id": 548,
     "bigSubject": "公共基础",
-    "yearQnum": 69
+    "yearQnum": 71
   },
   {
     "year": "2018",
@@ -7641,7 +7627,7 @@
     "analysis": "恒定流连续方程 $A= Q = 15\\times10^{3} =0.00075m2$则$,d=\\sqrt4A /\\pi=30.9$mm U 20",
     "id": 549,
     "bigSubject": "公共基础",
-    "yearQnum": 70
+    "yearQnum": 72
   },
   {
     "year": "2018",
@@ -7655,7 +7641,7 @@
     "analysis": "沿程损失系数的计算. 圆管层流的沿程阻力系数$\\lambda=\\frac{64}{Re}$,$Re=\\frac{vd}{\\nu}$,计算得$\\lambda=0.23$.",
     "id": 550,
     "bigSubject": "公共基础",
-    "yearQnum": 71
+    "yearQnum": 73
   },
   {
     "year": "2018",
@@ -7669,7 +7655,7 @@
     "analysis": "管嘴出流量计算公式. 圆柱形外管嘴的恒定自由出流公式为: Q=$\\mu A\\sqrt2gH ,\\mu=0.82 0$Q=$\\mu A\\sqrt2gH =0.82\\times0.5\\times\\pi\\times0.042\\sqrt2\\times9.8\\times7.5=0.0125$m^{3}/s 0",
     "id": 551,
     "bigSubject": "公共基础",
-    "yearQnum": 72
+    "yearQnum": 74
   },
   {
     "year": "2018",
@@ -7683,7 +7669,7 @@
     "analysis": "自由出流与淹没出流的流量、流速计算. 孔口出流流量：$Q=\\mu A\\sqrt{2gH}$；$\\mu$为流量系数，同一系统下相等。",
     "id": 552,
     "bigSubject": "公共基础",
-    "yearQnum": 73
+    "yearQnum": 75
   },
   {
     "year": "2018",
@@ -7697,7 +7683,7 @@
     "analysis": "谢才公式与曼宁公式运用.$v= C\\sqrt R i C C$为谢才系数,C= 1 R1/6则$, h 1 1 v=C\\sqrt R i= R1/6\\sqrt R i= \\times11/6\\times\\sqrt1\\times0.0008=1.414m/s n 0.02$ 故选择B.",
     "id": 553,
     "bigSubject": "公共基础",
-    "yearQnum": 74
+    "yearQnum": 76
   },
   {
     "year": "2018",
@@ -7711,7 +7697,7 @@
     "analysis": "达西定律理解. 渗流达西定律根据恒定均匀渗流实验总结得到,适用于R= $\\upsilon ^ \\leq1~10$的层流渗流$. _ \\nu$",
     "id": 554,
     "bigSubject": "公共基础",
-    "yearQnum": 75
+    "yearQnum": 77
   },
   {
     "year": "2018",
@@ -7725,7 +7711,7 @@
     "analysis": "相似原理和量纲分析. 几何相似是运动相似和动力相似的前提 动力相似是决定流动相似的主要因素,运动相似是几何相似和动力相似的表现.",
     "id": 555,
     "bigSubject": "公共基础",
-    "yearQnum": 76
+    "yearQnum": 78
   },
   {
     "year": "2018",
@@ -7739,7 +7725,7 @@
     "analysis": "磁场. NI 磁介质中的磁场安培环路定理,$\\oint$ Hd$1=2\\pi$rH=NI,H= .$2\\pi$l L 右手定则判断磁场方向.对于一个线圈,弯曲的四指指向电流的方向,伸开的拇指指向磁场 的方向.(注意:如果对于一根通电的直线产生磁场的方向判断,用右手握住导线,大拇指 指向电流的方向,四指所指方向为磁场方向).",
     "id": 556,
     "bigSubject": "公共基础",
-    "yearQnum": 77
+    "yearQnum": 79
   },
   {
     "year": "2018",
@@ -7753,7 +7739,7 @@
     "analysis": "基尔霍夫电压定律. 根据基尔霍夫电压定律(即KVL),对回路有:U+2$\\times$2+2=0,解得,U=-6V.",
     "id": 557,
     "bigSubject": "公共基础",
-    "yearQnum": 78
+    "yearQnum": 80
   },
   {
     "year": "2018",
@@ -7767,63 +7753,49 @@
     "analysis": "支路电流法. 根据支路电流法,三条及三条以上支路联结点是节点n=4,闭合电路中不含其他支 路的回路称为网孔m=3.可以列些n-1个KCL方程和m个KVL方程.有电流源的电路, 列些m-k个回路电压方程,其中k为电流源个数,本题k=1,且选择不包含电流源的回路列 些电压方程.故n-l=4-l=3个KCL方程,m-k=3-l=2个KVL方程,且选择不包含电流源的回 路列些电压方程.",
     "id": 558,
     "bigSubject": "公共基础",
-    "yearQnum": 79
-  },
-  {
-    "year": "2018",
-    "smallSubject": "电路",
-    "question": "已知正弦交流电流 i(t)的周期 T=lms,有效值 I=0.5A,t=0 时,$i=0.5\\sqrt{2}A$,则它的时间函数描述形式是( ).",
-    "A": "$i(t)=0.5\\sqrt2sin1000tA$",
-    "B": "i(t)=0.5sin$2000\\pi$tA",
-    "C": "$i(t)=0.5\\sqrt2sin (2000\\pi t+90\\circ)A$",
-    "D": "$i(t)=0.5\\sqrt2sin (1000\\pi t+90\\circ)A$",
-    "answer": "C",
-    "analysis": "正弦交流电的时间函数描述. 本题求解正弦交流电三要素,幅值,角频率,初相位.把相关数据带入即可.",
-    "id": 559,
-    "bigSubject": "公共基础",
-    "yearQnum": 80
-  },
-  {
-    "year": "2018",
-    "smallSubject": "电路",
-    "question": "对于图示电路，可以列写a、b、c、d四个结点KCL方程和①、②、③、④四个回路的KVL方程。为求出5个未知电流$I_1\\sim I_5$，正确的求解模型是（　）。",
-    "A": "任选3个KCL方程和2个KVL方程",
-    "B": "任选3个KCL方程和②、③的2个回路的KVL方程",
-    "C": "任选3个KCL方程和①、④的2个回路的KVL方程",
-    "D": "写出4个KCL方程和任意1个KVL方程",
-    "answer": "C",
-    "analysis": "根据支路电流法，三条及三条以上支路联结点是节点n=4，闭合电路中不含其他支路的回路称为网孔m=3。可以列写n-1个KCL方程和m个KVL方程。有电流源的电路，列写m-k个回路电压方程，其中k为电流源个数，本题k=1，且选择不包含电流源的回路列写电压方程。故n-1=4-1=3个KCL方程，m-k=3-1=2个KVL方程，且选择不包含电流源的回路列写电压方程，答案为C。",
-    "id": 560,
-    "bigSubject": "公共基础",
     "yearQnum": 81
   },
   {
     "year": "2018",
     "smallSubject": "电路",
-    "question": "图（A）所示功率因数补偿电路中，$C=C_1$时得到相量图如图（B）所示，$C=C_2$时得到相量图如图（C）所示，那么（　）。",
-    "A": "$C_1$一定大于$C_2$",
-    "B": "C =C 时,功率因数入.$\\lambda| =-0.866$,C =C 时,功率因数$\\lambda| =0866 1 2$C1 1 2 C2",
-    "C": "因为功率因数$\\lambda| =\\lambda| ,$所以采用两种方案均可 ]1 ]2",
-    "D": "$C =C$时,电路出现过补偿,不可取",
-    "answer": "D",
-    "analysis": "电容过补偿. 由于I=$\\omega$CU,图c中I 大于图b中的I ,所以Cl小于C2,故选项A错;因功率 2 2 2 因数无负值,故选项B错;b图是欠补偿情况,c图是过补偿情况,由于线路中负荷大多是 感性,过补偿时如果线路负荷波动增加,容易发生谐振引起系统不稳定,故不采取过补偿, 所以选项C错,选项D正确.",
-    "id": 561,
+    "question": "已知正弦交流电流 $i(t)$ 的周期 $T=1\\mathrm{ms}$，有效值 $I=0.5\\mathrm{A}$，$t=0$ 时 $i=0.5\\sqrt2\\mathrm{A}$，则它的时间函数描述形式是（　　）。",
+    "A": "$i(t)=0.5\\sqrt2sin1000tA$",
+    "B": "i(t)=0.5sin$2000\\pi$tA",
+    "C": "$i(t)=0.5\\sqrt2sin (2000\\pi t+90\\circ)A$",
+    "D": "$i(t)=0.5\\sqrt2sin (1000\\pi t+90\\circ)A$",
+    "answer": "C",
+    "analysis": "正弦交流电的时间函数描述。角频率 $\\omega=\\dfrac{2\\pi}{T}=2000\\pi\\ \\mathrm{rad/s}$；幅值 $I_m=\\sqrt2 I=0.5\\sqrt2\\ \\mathrm{A}$；$t=0$ 时 $i=0.5\\sqrt2\\mathrm{A}=I_m$，初相位 $\\varphi=90^\\circ$。故 $i(t)=0.5\\sqrt2\\sin(2000\\pi t+90^\\circ)\\ \\mathrm{A}$。选 C。",
+    "id": 559,
     "bigSubject": "公共基础",
     "yearQnum": 82
   },
   {
     "year": "2018",
+    "smallSubject": "电路",
+    "question": "图（A）所示功率因数补偿电路中，$C=C_1$ 时得到相量图如图（B）所示，$C=C_2$ 时得到相量图如图（C）所示，那么（　　）。",
+    "A": "$C_1$ 一定大于 $C_2$",
+    "B": "当 $C=C_1$ 时，功率因数 $\\lambda|_{C_1}=-0.866$；当 $C=C_2$ 时，功率因数 $\\lambda|_{C_2}=0.866$",
+    "C": "因为功率因数 $\\lambda|_{C_1}=\\lambda|_{C_2}$，所以采用两种方案均可",
+    "D": "$C=C_2$ 时，电路出现过补偿，不可取",
+    "answer": "D",
+    "analysis": "电容过补偿。由于 $I_2=\\omega CU$，图（c）中 $I_2$ 大于图（b）中的 $I_2$，所以 $C_1$ 小于 $C_2$，选项 A 错；因功率因数无负值，选项 B 错；图（b）是欠补偿情况，图（c）是过补偿情况，由于线路中负荷大多是感性，过补偿时如果线路负荷波动增加，容易发生谐振引起系统不稳定，故不采取过补偿，所以选项 C 错，选项 D 正确。",
+    "id": 561,
+    "bigSubject": "公共基础",
+    "yearQnum": 84
+  },
+  {
+    "year": "2018",
     "smallSubject": "电机与变压器",
-    "question": "某单相理想变压器其一次线圈为 550 匝,有两个二次线圈,若希望一次电压为 100V时,获得的二次电压分别为10V和20V,那么, | 和 | 应分别为( ). $N_{2}$ 10V $N_{2}$ 20V",
+    "question": "某单相理想变压器其一次线圈为 550 匝，有两个二次线圈，若希望一次电压为 100V 时，获得的二次电压分别为 10V 和 20V，那么，两个二次线圈的匝数应分别为（　　）。",
     "A": "50匝和100匝",
     "B": "100匝和50匝",
     "C": "55匝和110匝",
     "D": "110匝和55匝",
     "answer": "C",
-    "analysis": "变压器的电压变换.  U1 = K1,直接带入数据. U2 K2",
+    "analysis": "变压器的电压变换。根据 $\\dfrac{U_1}{U_2}=\\dfrac{N_1}{N_2}$：$N_{2(10V)}=550\\times\\dfrac{10}{100}=55$ 匝，$N_{2(20V)}=550\\times\\dfrac{20}{100}=110$ 匝。故选 C。",
     "id": 562,
     "bigSubject": "公共基础",
-    "yearQnum": 83
+    "yearQnum": 85
   },
   {
     "year": "2018",
@@ -7837,12 +7809,12 @@
     "analysis": "继电-接触控制电路. 热继电器的常闭触点串接在电动机的控制电路中外,热元件应串接在主电路中.",
     "id": 563,
     "bigSubject": "公共基础",
-    "yearQnum": 84
+    "yearQnum": 86
   },
   {
     "year": "2018",
     "smallSubject": "信号与信息",
-    "question": "某温度信号如图<br><img src=\"/images/id1100_2018_87_1.jpeg\" style=\"max-width:100%;\">",
+    "question": "某温度信号如图（A）所示，经温度传感器测量后得到图（B）波形，经采样后得到图（C）波形，再经保持器得到图（D）波形，那么（　　）。<br><img src=\"/images/id1100_2018_87_1.jpeg\" style=\"max-width:100%;\">",
     "A": "图(B)是图(A)的模拟信号",
     "B": "图(A)是图(B)的模拟信号",
     "C": "图(C)是图(B)的数字信号",
@@ -7851,63 +7823,63 @@
     "analysis": "信号的分类. 模拟信号是对实际物理量测量的结果,是由原始时间信号转换而来的电信号.采样 信号是一种离散信号,在时间上断续,数值连续(仅在采样点上有定义的离散信号).数字 信号是指幅值离散并以二进制代码表示的离散信号.a图是原始信号,b图是模拟信号,c 图是离散信号,d图是采样保持信号.",
     "id": 564,
     "bigSubject": "公共基础",
-    "yearQnum": 85
-  },
-  {
-    "year": "2018",
-    "smallSubject": "信号与信息",
-    "question": "若某周期信号的一次谐波分量为5sin103tV,则它的三次谐波分量可表示为( ).",
-    "A": "$Usin3\\times103t,U>5V$",
-    "B": "$3\\times103t,U<5V Usin$",
-    "C": "Usin106t,U>5V",
-    "D": "Usin106t,U<5V",
-    "answer": "B",
-    "analysis": "模拟信号分析. 本题要求解傅里叶级数展开式.周期信号由一系列谐波信号叠加而成,随着谐波次 数的增加,叠加后的信号越趋近于原始信号.因为周期信号的幅度频谱随谐波次数的增加而 迅速减小,故较所携带的信息更加完整,更加细致.",
-    "id": 565,
-    "bigSubject": "公共基础",
-    "yearQnum": 86
-  },
-  {
-    "year": "2018",
-    "smallSubject": "信号与信息",
-    "question": "设放大器的输入信号为$u_1(t)$,输出信号为$u_2(t)$,放大器的幅频特性如图所示,设$u_1(t)=\\sqrt{2}u_{11}\\sin 2\\pi ft+\\cdots+\\sqrt{2}u_{1n}\\sin 2n\\pi ft$,若希望$u_2(t)$不出现频率失真,则应使放大器的:( ).<br><img src=\"/images/id1102_2018_89_2.jpeg\" style=\"max-width:100%;\">",
-    "A": "f >f",
-    "B": "f >nf",
-    "C": "f <f",
-    "D": "f <nf",
-    "answer": "B",
-    "analysis": "低通滤波器. 由图可判断该放大器是低通滤波器,因低通滤波器只允许低于截止频率 f 的信号 H 通过,若要使输出信号频率不失真,只需输入信号中最大频率 nf 小于截止频率f 即可,故 H 选 B .",
-    "id": 566,
-    "bigSubject": "公共基础",
     "yearQnum": 87
   },
   {
     "year": "2018",
-    "smallSubject": "数字电子技术",
-    "question": "对逻辑表达式A  D  +  A D的化简结果是( ).",
-    "A": "$U\\sin3\\times10^3t,U>5V$",
-    "B": "$U\\sin3\\times10^3t,U<5V$",
-    "C": "$U\\sin10^6t,U>5V$",
-    "D": "$U\\sin10^6t,U<5V$",
-    "answer": "C",
-    "analysis": "逻辑代数的基本运算. A  D  +  A D =ADA  D =(A+D)(A+D)=AD+AD",
-    "id": 567,
+    "smallSubject": "信号与信息",
+    "question": "若某周期信号的一次谐波分量为 $5\\sin 10^3t\\ \\mathrm{V}$，则它的三次谐波分量可表示为（　　）。",
+    "A": "$U\\sin 3\\times10^3t$，$U>5\\mathrm{V}$",
+    "B": "$U\\sin 3\\times10^3t$，$U<5\\mathrm{V}$",
+    "C": "$U\\sin 10^6t$，$U>5\\mathrm{V}$",
+    "D": "$U\\sin 10^6t$，$U<5\\mathrm{V}$",
+    "answer": "B",
+    "analysis": "模拟信号分析。本题要求解傅里叶级数展开式。周期信号由一系列谐波信号叠加而成，三次谐波频率为一次谐波的 3 倍，即 $3\\times10^3t$；因为周期信号的幅度频谱随谐波次数的增加而迅速减小，故三次谐波幅值 $U<5\\mathrm{V}$。故选 B。",
+    "id": 565,
     "bigSubject": "公共基础",
     "yearQnum": 88
   },
   {
     "year": "2018",
-    "smallSubject": "数字电子技术",
-    "question": "已知数字信号A和数字信号B的波形如图所示,则数字信号F=A+B的波形图 ( ).<br><img src=\"/images/q23/id568_stem.png\" style=\"max-width:100%;\" />",
+    "smallSubject": "信号与信息",
+    "question": "设放大器的输入信号为$u_1(t)$,输出信号为$u_2(t)$,放大器的幅频特性如图所示,设$u_1(t)=\\sqrt{2}u_{11}\\sin 2\\pi ft+\\cdots+\\sqrt{2}u_{1n}\\sin 2n\\pi ft$,若希望$u_2(t)$不出现频率失真,则应使放大器的:( ).<br><img src=\"/images/id1102_2018_89_2.jpeg\" style=\"max-width:100%;\">",
     "A": "$f_{\\mathrm H}>f$",
     "B": "$f_{\\mathrm H}>nf$",
     "C": "$f_{\\mathrm H}<f$",
     "D": "$f_{\\mathrm H}<nf$",
-    "answer": "A",
-    "analysis": "数字信号的逻辑演算. 根据给定波形A,B,可写出输入与输出的真值表.或直接带入验证.",
-    "id": 568,
+    "answer": "B",
+    "analysis": "低通滤波器。由图可判断该放大器是低通滤波器，因低通滤波器只允许低于截止频率 $f_{\\mathrm H}$ 的信号通过，若要使输出信号频率不失真，只需输入信号中最大频率 $nf$ 小于截止频率 $f_{\\mathrm H}$，即 $f_{\\mathrm H}>nf$。故选 B。",
+    "id": 566,
     "bigSubject": "公共基础",
     "yearQnum": 89
+  },
+  {
+    "year": "2018",
+    "smallSubject": "数字电子技术",
+    "question": "对逻辑表达式 $\\overline{AD+\\overline{A}\\overline{D}}$ 的化简结果是（　　）。",
+    "A": "0",
+    "B": "1",
+    "C": "$\\overline{A}D+A\\overline{D}$",
+    "D": "$\\overline{AD}+AD$",
+    "answer": "C",
+    "analysis": "逻辑代数的基本运算。$\\overline{AD+\\overline{A}\\overline{D}}=\\overline{AD}\\cdot\\overline{\\overline{A}\\overline{D}}=(\\overline{A}+\\overline{D})(A+D)=\\overline{A}D+A\\overline{D}$。故选 C。",
+    "id": 567,
+    "bigSubject": "公共基础",
+    "yearQnum": 90
+  },
+  {
+    "year": "2018",
+    "smallSubject": "数字电子技术",
+    "question": "已知数字信号 A 和数字信号 B 的波形如图所示，则数字信号 $F=\\overline{A+B}$ 的波形图为（　　）。<br><img src=\"/images/id568_2018_91_stem.png\" style=\"max-width:100%;\"><br><img src=\"/images/id568_2018_91_opts.png\" style=\"max-width:100%;\">",
+    "A": "图（A）",
+    "B": "图（B）",
+    "C": "图（C）",
+    "D": "图（D）",
+    "answer": "A",
+    "analysis": "数字信号的逻辑演算。$F=\\overline{A+B}$ 是或非关系：A、B 中任一为 1 时 F 为 0，A、B 同时为 0 时 F 为 1。根据给定波形 A、B，可写出输入与输出的真值表，或直接代入验证，所得波形为选项 A。",
+    "id": 568,
+    "bigSubject": "公共基础",
+    "yearQnum": 91
   },
   {
     "year": "2018",
@@ -7921,49 +7893,35 @@
     "analysis": "BCD 码. BCD 码是用4bit二进制代码表示十进制数的1个位.",
     "id": 569,
     "bigSubject": "公共基础",
-    "yearQnum": 90
-  },
-  {
-    "year": "2018",
-    "smallSubject": "模拟电子技术",
-    "question": "二极管应用电路如图所示,图中,u =1V,u =5V,设二极管均为理想器件,则输出 A B 电压u ( ). F<br><img src=\"/images/id1135_2018_93_2.jpeg\" style=\"max-width:100%;\">",
-    "A": "等于1",
-    "B": "等于5v",
-    "C": "等于0",
-    "D": "因R未知,无法确定",
-    "answer": "B",
-    "analysis": "二极管. u >u ,二极管D2导通,D1截止. A B",
-    "id": 570,
-    "bigSubject": "公共基础",
-    "yearQnum": 91
-  },
-  {
-    "year": "2018",
-    "smallSubject": "模拟电子技术",
-    "question": "运算放大器应用电路如图所示,其中C=$1\\mu F,R=1M\\Omega,u =\\pm10V,$若u =1V, OM c 则U ( ). 0<br><img src=\"/images/id1136_2018_94_3.png\" style=\"max-width:100%;\">",
-    "A": "等于0V",
-    "B": "等于1V",
-    "C": "等于10V",
-    "D": "在t<10s时,为-t,在t>10s后,为-10V",
-    "answer": "D",
-    "analysis": "运算放大器. 由图可知这是一个反相积分运算放大器$,u =- 1 \\int udt,0-u \\approx 1 \\int oidt= 0 c 0 RC C R 1\\times1 n \\int dt=t,$又因$u =\\pm10V,$所以输出电压u0与时间t成近似线性关系,如下图所 $10^{6}\\times106 0 0M$ 示: 由图可知,当 t<10s 时$,u =-t;t\\geq10s$ 时,u =-10V. 0 0",
-    "id": 571,
-    "bigSubject": "公共基础",
     "yearQnum": 92
   },
   {
     "year": "2018",
-    "smallSubject": "电工电子技术",
-    "question": "二极管应用电路如图所示，图中$u_A=1\\mathrm{V}$，$u_B=5\\mathrm{V}$，设二极管均为理想器件，则输出电压$u_F$（　　）。",
-    "A": "等于1V",
-    "B": "等于5V",
-    "C": "等于0",
-    "D": "因R未知，无法确定",
-    "answer": "A",
-    "analysis": "两个二极管阳极接在一起，阴极分别接$u_A$和$u_B$。由于$u_A < u_B$，二极管$D_1$优先导通，导通后$u_F=u_A=1\\mathrm{V}$。此时$D_2$因阳极电压低于阴极电压而截止。答案选【A】",
-    "id": 572,
+    "smallSubject": "模拟电子技术",
+    "question": "二极管应用电路如图所示，图中 $u_A=1\\mathrm{V}$，$u_B=5\\mathrm{V}$，设二极管均为理想器件，则输出电压 $u_F$（　　）。<br><img src=\"/images/id1135_2018_93_2.jpeg\" style=\"max-width:100%;\">",
+    "A": "等于 1V",
+    "B": "等于 5V",
+    "C": "等于 0",
+    "D": "因 R 未知，无法确定",
+    "answer": "B",
+    "analysis": "二极管。由于 $u_B>u_A$，二极管 D2 优先导通，D1 反偏截止，故输出电压 $u_F=u_B=5\\mathrm{V}$。故选 B。",
+    "id": 570,
     "bigSubject": "公共基础",
     "yearQnum": 93
+  },
+  {
+    "year": "2018",
+    "smallSubject": "模拟电子技术",
+    "question": "运算放大器应用电路如图所示，其中 $C=1\\mu\\mathrm{F}$，$R=1\\mathrm{M}\\Omega$，$u_{OM}=\\pm10\\mathrm{V}$。若 $u_i=1\\mathrm{V}$，则 $U_0$（　　）。<br><img src=\"/images/id1136_2018_94_3.png\" style=\"max-width:100%;\">",
+    "A": "等于 0V",
+    "B": "等于 1V",
+    "C": "等于 10V",
+    "D": "在 $t<10\\mathrm{s}$ 时，为 $-t$；在 $t>10\\mathrm{s}$ 后，为 $-10\\mathrm{V}$",
+    "answer": "D",
+    "analysis": "运算放大器。由图可知这是一个反相积分运算放大器，$u_0=-\\dfrac{1}{RC}\\int u_i\\,\\mathrm{d}t$。代入 $RC=10^{-6}\\times10^{6}=1\\ \\mathrm{s}$，$u_i=1\\mathrm{V}$，得 $u_0=-t\\ \\mathrm{V}$。又因 $u_{OM}=\\pm10\\mathrm{V}$，输出电压与时间 t 成近似线性关系且不超过饱和值：当 $t<10\\mathrm{s}$ 时，$u_0=-t$；当 $t\\ge10\\mathrm{s}$ 时，$u_0=-10\\mathrm{V}$。故选 D。",
+    "id": 571,
+    "bigSubject": "公共基础",
+    "yearQnum": 94
   },
   {
     "year": "2018",
@@ -7977,7 +7935,7 @@
     "analysis": "时序逻辑电路. 看图分析如下, 1)触发器 CP 上升沿做起用; 2)存在置位端置1,复位端复0; 3)置位端和复位端低电平有效,此时输出Q Q Q =101; 2 1 0 4)当 CP 脉冲第一个上升沿起作用前,D =Q =0,D =Q =1,D =Q =1.当CP脉 2 1 1 0 0 2 冲第一个上升沿起作用时,Q =D =0,Q =D =1,Q =D =1,故输出Q Q Q =011. 2 2 1 1 0 0 2 1 0 5) 当CP脉冲第二个上升沿起作用前,D =Q =1,D =Q =1, D =Q =0.当CP 2 1 1 0 0 2 脉冲第二个上升沿起作用时,Q =D =1,Q =D =1,Q =D =0,故输出Q Q Q =110. 2 2 1 1 0 0 2 1 0 6)当CP脉冲第三个上升沿起作用前,D =Q =1,D =Q =0,D =Q =1.当CP 脉 2 1 1 0 0 2 冲第三个上升沿起作用时,Q =D =1,Q =D =0,Q =D =1,故输出Q Q Q =101. 2 2 1 1 0 0 2 1 0 可见输出$101\\rightarrow011\\rightarrow110\\rightarrow101,$综上时序逻辑电路为循环左移寄存器.",
     "id": 573,
     "bigSubject": "公共基础",
-    "yearQnum": 94
+    "yearQnum": 96
   },
   {
     "year": "2018",
@@ -7991,7 +7949,7 @@
     "analysis": "计算机的分类. 按用途可分为专用计算器和通用计算器;按所处理的量值不同,可分为模拟计算器 和数字计算器.",
     "id": 574,
     "bigSubject": "公共基础",
-    "yearQnum": 95
+    "yearQnum": 97
   },
   {
     "year": "2018",
@@ -8005,7 +7963,7 @@
     "analysis": "存储器. 计算机的内存储器多数是半导体存储器.",
     "id": 575,
     "bigSubject": "公共基础",
-    "yearQnum": 96
+    "yearQnum": 98
   },
   {
     "year": "2018",
@@ -8019,13 +7977,13 @@
     "analysis": "操作系统. 批处理操作系统是指将用户的一批作业有序排列在一起,形成一个庞大的作业流. 计算机指令系统会自动的顺序执行作业流.批处理特点是系统运行时不允许用户与作业进行 交互,缺点是无论成批输入还是作业的转换执行都是在主机 CPU 控制下执行.",
     "id": 576,
     "bigSubject": "公共基础",
-    "yearQnum": 97
+    "yearQnum": 99
   },
   {
     "year": "2018",
     "smallSubject": "计算机系统",
     "question": "杀毒软件应具有的功能是( ).",
-    "A": "消除病",
+    "A": "消除病毒",
     "B": "预防病毒",
     "C": "检查病毒",
     "D": "检查并消除病毒",
@@ -8033,7 +7991,7 @@
     "analysis": "软件. 杀毒软件应具有的功能是检查并消除病毒.",
     "id": 577,
     "bigSubject": "公共基础",
-    "yearQnum": 98
+    "yearQnum": 100
   },
   {
     "year": "2018",
@@ -8047,7 +8005,7 @@
     "analysis": "非数值数据在计算机内的表示. 微机系统中普遍使用的字符信息编码是 ACSII 编码.",
     "id": 578,
     "bigSubject": "公共基础",
-    "yearQnum": 99
+    "yearQnum": 101
   },
   {
     "year": "2018",
@@ -8061,7 +8019,7 @@
     "analysis": "Windows 操作系统. Windows 操作系统是一个多任务的操作系统.",
     "id": 579,
     "bigSubject": "公共基础",
-    "yearQnum": 100
+    "yearQnum": 102
   },
   {
     "year": "2018",
@@ -8075,7 +8033,7 @@
     "analysis": "存储管理. 虚拟存储管理是利用大容量的外存储器来扩充内存储器的容量.",
     "id": 580,
     "bigSubject": "公共基础",
-    "yearQnum": 101
+    "yearQnum": 103
   },
   {
     "year": "2018",
@@ -8089,7 +8047,7 @@
     "analysis": "计算机网络的功能. 计算机网络的主要功能包括资源共享,数据通信,提高可靠性,增强系统处理功能.",
     "id": 581,
     "bigSubject": "公共基础",
-    "yearQnum": 102
+    "yearQnum": 104
   },
   {
     "year": "2018",
@@ -8103,7 +8061,7 @@
     "analysis": "因特网. 因特网提供的服务包括电子邮件服务,远程登录服务,文件传输服务,WWW 服 务,信息搜索服务.",
     "id": 582,
     "bigSubject": "公共基础",
-    "yearQnum": 103
+    "yearQnum": 105
   },
   {
     "year": "2018",
@@ -8117,7 +8075,7 @@
     "analysis": "计算机网络的分类. 按采用的传输介质分为双绞线网,同轴电缆网,光纤网,无线网等;按网络传输技 术可分为广播式网络和点到点网络;按线路上所传输信号的不同,可分为基带网和宽带网两 种.",
     "id": 583,
     "bigSubject": "公共基础",
-    "yearQnum": 104
+    "yearQnum": 106
   },
   {
     "year": "2018",
@@ -8131,7 +8089,7 @@
     "analysis": "资金等值计算. 根据等额支付偿债基金公式(已知F,求$A): A=F0 c 1=F(A,i,n)=600\\times(A/F,5%,5)=600\\times0.18097=108.58$万元$. (1:c)n^{1} F$",
     "id": 584,
     "bigSubject": "公共基础",
-    "yearQnum": 105
+    "yearQnum": 107
   },
   {
     "year": "2018",
@@ -8145,7 +8103,7 @@
     "analysis": "财务分析. 从企业角度进行投资项目现金流量分析时,可不考虑增值税,因为增值税是价外税, 不进入企业成本也不进入销售收入.执行新的《中华人民共和国增值税暂行条例》以后,为 了体现固定资产进项税抵扣导致企业应纳增值税的降低进而致使净现金流量增加的作用,应 在现金流入中增加销项税额,同时在现金流出中增加进项税额以及应纳增值税.",
     "id": 585,
     "bigSubject": "公共基础",
-    "yearQnum": 106
+    "yearQnum": 108
   },
   {
     "year": "2018",
@@ -8159,7 +8117,7 @@
     "analysis": "利息计算. 注意题目问的是第2年年末偿还的利息(不包括本金). 等额本息法每年还款的本利和相等,根据等额支付资金回收公式(已知P求A),每年年末 还本付息金额为: c(1:c)n A=P0 1=P(A/P,8%,5)=150$\\times$0.2505=37.575万元 (1:c)n^{1} 则第1年末偿还利息为150$\\times$8%=12万元,偿还本金为37.575-12=25.575万元;第1年已经 偿还本金25.575万元,尚未偿还本金为150-25.575=124.425万元;第2年年末应偿还利息 为(150-25.575)$\\times$8%=9.954万元.",
     "id": 586,
     "bigSubject": "公共基础",
-    "yearQnum": 107
+    "yearQnum": 109
   },
   {
     "year": "2018",
@@ -8173,7 +8131,7 @@
     "analysis": "财务分析. 内部收益事是指项目在计算期内各年净现金流量现值累计等于零时的收益率,属于 动态评价指标.计算内部收益率不需要事先给定基准收益率ie,计算出内部收益率后,再与 项目的基准收益率ie比较,以判定项目财务上的可行性. 常规项目投资方案是指除了建设期初或投产期初的净现金流量为负值外,以后年份的净现金 流量均为正值,计算期内净现金流量由负到正只变化一次,这类项目只要累计净现金流量大 于零,内部收益率就有唯一解,即项目的内部收益率.",
     "id": 587,
     "bigSubject": "公共基础",
-    "yearQnum": 108
+    "yearQnum": 110
   },
   {
     "year": "2018",
@@ -8187,7 +8145,7 @@
     "analysis": "国民经济评价. 影子价格是能够反映资源真实价值和市场供求关系的价格.",
     "id": 588,
     "bigSubject": "公共基础",
-    "yearQnum": 109
+    "yearQnum": 111
   },
   {
     "year": "2018",
@@ -8201,7 +8159,7 @@
     "analysis": "不确定性分析. 生产能力利用率的盈亏平衡点指标数值越低,说明较低的生产能力利用率即可达到 盈亏平衡,也即说明企业经营抗风险能力较强.",
     "id": 589,
     "bigSubject": "公共基础",
-    "yearQnum": 110
+    "yearQnum": 112
   },
   {
     "year": "2018",
@@ -8215,7 +8173,7 @@
     "analysis": "财务评价. 由于残值可以回收,并没有真正形成费用消耗,故应从费用中将残值减掉. 甲方案的费用现值$: P=4(P/A,20%,20)+25-8(P/F,20%,20)=4\\times4.8696+25-8\\times0.02608=44.27$万元 乙方案的费用现值$: P=6(P/A,20%,20)+12-6(P/F,20%,20)=6\\times4.8696+12-6\\times0.02608=41.06$万元",
     "id": 590,
     "bigSubject": "公共基础",
-    "yearQnum": 111
+    "yearQnum": 113
   },
   {
     "year": "2018",
@@ -8229,7 +8187,7 @@
     "analysis": "价值工程. 该零件的成本系数C为:C=880$\\div$10000=0.088 该零部件的价值指数V为:V=0.14$\\div$0.088=1.591",
     "id": 591,
     "bigSubject": "公共基础",
-    "yearQnum": 112
+    "yearQnum": 114
   },
   {
     "year": "2018",
@@ -8243,7 +8201,7 @@
     "analysis": "建筑法. 《中华人民共和国建筑法》第三十四条规定,工程监理单位应当根据建设单位的委 托,客观,公正地执行监理任务. 选项C和D明显错误.选项A也是错误的.因为监理单位承揽监理业务的范围是根据其单 位资质决定的,而不是和甲方签订的合同所决定的.",
     "id": 592,
     "bigSubject": "公共基础",
-    "yearQnum": 113
+    "yearQnum": 115
   },
   {
     "year": "2018",
@@ -8257,7 +8215,7 @@
     "analysis": "安全生产许可. 《中华人民共和国安全法》第六十条规定,负有安全生产监督管理职责的部门依照 有关法律,法规的规定,对涉及安全生产的事项需要审查批准(包括批准,核准,许可,注 册,认证,颁发证照等,下同)或者验收的,必须严格依照有关法律,法规和国家标准或者 行业标准规定的安全生产条件和程序进行审查;不符合有关法律,法规和国家标准或者行业 标准规定的安全生产条件的,不得批准或者验收通过.对未依法取得批准或者验收合格的单 位擅自从事有关活动的,负责行政审批的部门发现或者接到举报后应当立即予以取缔,并依 法予以处理.对已经依法取得批准的单位,负责行政审批的部门发现其不再具备安全生产条 件的,应当撒销原批准.",
     "id": 593,
     "bigSubject": "公共基础",
-    "yearQnum": 114
+    "yearQnum": 116
   },
   {
     "year": "2018",
@@ -8271,7 +8229,7 @@
     "analysis": "招投标法. 《中华人民共和国建筑法》第二十七条规定,大型建筑工程或者结构复杂的建筑工 程,可以由两个以上的承包单位联合共同承包.共同承包的各方对承包合同的履行承担连带 责任. 两个以上不同资质等级的单位实行联合共同承包的,应当按照资质等级低的单位的业务许可 范围承揽工程.",
     "id": 594,
     "bigSubject": "公共基础",
-    "yearQnum": 115
+    "yearQnum": 117
   },
   {
     "year": "2018",
@@ -8285,7 +8243,7 @@
     "analysis": "合同法. 《中华人民共和国合同法》第六十二条第二款规定,价款或者报酬不明确的,按照 订立合同时履行地的市场价格履行.",
     "id": 595,
     "bigSubject": "公共基础",
-    "yearQnum": 116
+    "yearQnum": 118
   },
   {
     "year": "2018",
@@ -8299,7 +8257,7 @@
     "analysis": "环境保护法. 《中华人民共和国环境保护法》第三十五条规定,城乡建设应当结合当地自然环境 的特点,保护植被,水域和自然景观.加强城市园林,绿地和风景名胜区的建设与管理.",
     "id": 596,
     "bigSubject": "公共基础",
-    "yearQnum": 117
+    "yearQnum": 119
   },
   {
     "year": "2018",
@@ -8313,35 +8271,7 @@
     "analysis": "安全生产法. 《中华人民共和国安全法》第十八条规定,生产经营单位的主要负责人对本单位安 全生产工作负有下列职责: (一)建立,健全本单位安全生产责任制; (二)组织制定本单位安全生产规章制度和操作规程; (三)组织制定并实施本单位安全生产教育和培训计划; (四)保证本单位安全生产投入的有效实施; (五)督促,检查本单位的安全生产工作,及时消除生产安全事故隐患; (六)组织制定并实施本单位的生产安全事故应急救援预案; (七)及时,如实报告生产安全事故.",
     "id": 597,
     "bigSubject": "公共基础",
-    "yearQnum": 118
-  },
-  {
-    "bigSubject": "公共基础",
-    "smallSubject": "法律法规",
-    "year": "2018",
-    "yearQnum": 119,
-    "question": "某城市计划对本地城市建设进行全面规划，根据《环境保护法》的规定，下列城乡建设行为不符合《环境保护法》规定的是（　　）。",
-    "A": "加强在自然景观中修建人文景观",
-    "B": "有效保护植被、水域",
-    "C": "加强城市园林、绿地园林",
-    "D": "加强风景名胜区的建设",
-    "answer": "A",
-    "analysis": "城乡建设应当结合当地自然环境的特点，保护植被、水域和自然景观，加强城市园林、绿地和风景名胜区的建设。答案选A。",
-    "id": 598
-  },
-  {
-    "bigSubject": "公共基础",
-    "smallSubject": "法律法规",
-    "year": "2018",
-    "yearQnum": 120,
-    "question": "根据《建设工程安全生产管理条例》规定，施工单位主要负责人应当承担的责任是（　　）。",
-    "A": "落实安全生产责任制度、安全生产规章制度和操作规程",
-    "B": "保证本单位安全生产条件所需资金的投入",
-    "C": "确保安全生产费用的有效使用",
-    "D": "根据工程的特点组织特定安全施工措施",
-    "answer": "B",
-    "analysis": "施工单位主要负责人依法对本单位的安全生产工作全面负责。施工单位应当建立健全安全生产责任制度和安全生产教育培训制度，制定安全生产规章制度和操作规程，保证本单位安全生产条件所需资金的投入，对所承担的建设工程进行定期和专项安全检查，并做好安全检查记录。答案选B。",
-    "id": 599
+    "yearQnum": 120
   },
   {
     "year": "2019",
@@ -28502,5 +28432,75 @@
     "id": 2040,
     "bigSubject": "公共基础",
     "yearQnum": 70
+  },
+  {
+    "year": "2018",
+    "smallSubject": "线性代数",
+    "question": "要使齐次线性方程组 $\\begin{cases}ax_1+x_2+x_3=0\\\\x_1+ax_2+x_3=0\\\\x_1+x_2+ax_3=0\\end{cases}$ 有非零解，则 $a$ 满足：（　　）。",
+    "A": "$-2<a<-1$",
+    "B": "$a=1$ 或 $a=-2$",
+    "C": "$a\\ne-1$ 且 $a\\ne-2$",
+    "D": "$a>-1$",
+    "answer": "B",
+    "analysis": "齐次线性方程组有非零解的等价描述——三阶行列式的计算。$Ax=0$ 有非零解 $\\Leftrightarrow |A|=0\\Leftrightarrow\\begin{vmatrix}a&1&1\\\\1&a&1\\\\1&1&a\\end{vmatrix}=(a-1)^2(a+2)=0$，即 $a=1$ 或 $a=-2$。故选 B。",
+    "id": 2041,
+    "bigSubject": "公共基础",
+    "yearQnum": 20
+  },
+  {
+    "year": "2018",
+    "smallSubject": "氧化还原与电化学",
+    "question": "在酸性介质中反应 $\\mathrm{MnO_4^-}+\\mathrm{SO_3^{2-}}+\\mathrm{H^+}\\to\\mathrm{Mn^{2+}}+\\mathrm{SO_4^{2-}}+\\mathrm{H_2O}$ 配平后 $\\mathrm{H^+}$ 反应系数为（　　）。",
+    "A": "8",
+    "B": "6",
+    "C": "0",
+    "D": "5",
+    "answer": "B",
+    "analysis": "氧化还原反应方程式的配平（离子-电子法：得电子总数=失电子总数）。还原半反应：$\\mathrm{MnO_4^-}+8\\mathrm{H^+}+5e^-\\to\\mathrm{Mn^{2+}}+4\\mathrm{H_2O}$；氧化半反应：$\\mathrm{SO_3^{2-}}+\\mathrm{H_2O}-2e^-\\to\\mathrm{SO_4^{2-}}+2\\mathrm{H^+}$。按最小公倍数 10 相加并消去多余物质：$2\\mathrm{MnO_4^-}+5\\mathrm{SO_3^{2-}}+6\\mathrm{H^+}\\to2\\mathrm{Mn^{2+}}+5\\mathrm{SO_4^{2-}}+3\\mathrm{H_2O}$，$\\mathrm{H^+}$ 系数为 6。故选 B。",
+    "id": 2042,
+    "bigSubject": "公共基础",
+    "yearQnum": 41
+  },
+  {
+    "year": "2018",
+    "smallSubject": "弯曲",
+    "question": "图示等边角钢制成的悬臂梁 AB，C 点为截面形心，x 为该梁轴线，$y'$、$z'$ 为形心主轴。集中力 F 竖直向下，作用线过形心，梁将发生以下变形（　　）。<br><img src=\"/images/id2043_2018_66_stem.png\" style=\"max-width:100%;\">",
+    "A": "xy 平面内的平面弯曲",
+    "B": "扭转和 xy 平面内的平面弯曲",
+    "C": "$xy'$ 和 $xz'$ 平面内的双向平面弯曲",
+    "D": "扭转及 $xy'$ 和 $xz'$ 平面内的双向弯曲",
+    "answer": "C",
+    "analysis": "平面弯曲的概念。根据平面弯曲的受力特征：外力作用平面与杆件的形心主惯性平面重合或平行，横向外力作用线通过横截面的弯曲中心。本题集中力 F 作用在形心 C（即弯曲中心），不产生扭转；将力 F 分解为沿形心主轴方向的 2 个分量 $F_{y'}$ 和 $F_{z'}$，则 $F_{y'}$ 使得悬臂梁 AB 在 $xy'$ 平面内弯曲，$F_{z'}$ 使得悬臂梁 AB 在 $xz'$ 平面内弯曲，发生双向平面弯曲。故选 C。",
+    "id": 2043,
+    "bigSubject": "公共基础",
+    "yearQnum": 66
+  },
+  {
+    "year": "2018",
+    "smallSubject": "电路",
+    "question": "图（A）滤波器的幅频特性如图（B）所示，当 $u_i=u_{i1}=10\\sqrt2\\sin100t\\ \\mathrm{V}$ 时，输出 $u_0=u_{01}$；当 $u_i=u_{i2}=10\\sqrt2\\sin10^4t\\ \\mathrm{V}$ 时，输出 $u_0=u_{02}$。那么，可以算出（　　）。<br><img src=\"/images/id2044_2018_83_stem.png\" style=\"max-width:100%;\">",
+    "A": "$u_{01}=u_{02}=10\\mathrm{V}$",
+    "B": "$u_{01}=10\\mathrm{V}$，$u_{02}$ 不能确定，但不小于 10V",
+    "C": "$u_{01}<10\\mathrm{V}$，$u_{02}=0$",
+    "D": "$u_{01}=10\\mathrm{V}$，$u_{02}=1\\mathrm{V}$",
+    "answer": "D",
+    "analysis": "幅频特性。根据图（b）可知，$\\omega=100\\ \\mathrm{rad/s}$ 时 $\\left|\\dfrac{U_0}{U_i}\\right|=1$，故 $u_{01}=10\\mathrm{V}$；$\\omega=10^4\\ \\mathrm{rad/s}$ 时 $\\left|\\dfrac{U_0}{U_i}\\right|=0.1$，故 $u_{02}=1\\mathrm{V}$。故选 D。",
+    "id": 2044,
+    "bigSubject": "公共基础",
+    "yearQnum": 83
+  },
+  {
+    "year": "2018",
+    "smallSubject": "数字电子技术",
+    "question": "图（A）所示电路中，复位信号 $\\overline{R_D}$、信号 A 及时钟脉冲信号 CP 如图（B）所示，经分析可知，在第一个和第二个时钟脉冲的下降沿时刻，输出 Q 先后等于（　　）。<br>附：触发器的逻辑状态表为：D=0 时 $Q^{n+1}=0$；D=1 时 $Q^{n+1}=1$。<br><img src=\"/images/id2045_2018_95_stem.png\" style=\"max-width:100%;\">",
+    "A": "0　0",
+    "B": "0　1",
+    "C": "1　0",
+    "D": "1　1",
+    "answer": "A",
+    "analysis": "D 触发器。1）D 触发器 CP 上升沿起作用；2）存在复位端 $\\overline{R_D}$，低电平有效时复 0，初始脉冲将 Q 复位为 0；3）输入 $D=\\overline{A\\overline{Q}}$。第一个 CP 脉冲上升沿起作用前，$A=1$、$\\overline{Q}=1$，$D=\\overline{1\\cdot1}=0$，上升沿起作用时 $Q=D=0$；第二个 CP 脉冲上升沿起作用前，$A=1$、$\\overline{Q}=1$，$D=\\overline{1\\cdot1}=0$，上升沿起作用时 $Q=D=0$。故两个时钟脉冲下降沿时刻输出 Q 先后为 0、0。故选 A。",
+    "id": 2045,
+    "bigSubject": "公共基础",
+    "yearQnum": 95
   }
 ]
