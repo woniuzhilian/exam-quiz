@@ -11832,16 +11832,16 @@
   {
     "year": "2021",
     "smallSubject": "微分学",
-    "question": "设函数$z =xy$,则$\\varepsilon2z$等于:( )$\\varepsilon x\\varepsilon y$",
-    "A": "$xy(1+ln x)$",
-    "B": "$xy(1+yln x)$",
-    "C": "$xy^{1}(1+yln x)$",
-    "D": "$xy(1-xln x)$",
+    "question": "设函数$z=x^{y}$，则$\\dfrac{\\partial^{2}z}{\\partial x\\partial y}$等于：（　　）。",
+    "A": "$x^{y}(1+\\ln x)$",
+    "B": "$x^{y}(1+y\\ln x)$",
+    "C": "$x^{y-1}(1+y\\ln x)$",
+    "D": "$x^{y}(1-x\\ln x)$",
     "answer": "C",
-    "analysis": "求偏导,高阶偏导.$\\varepsilon z =yxy^{1}$,$\\varepsilon2z = \\varepsilon(yxy^{1}) =xy^{1}+ylnx\\cdot x y^{1} =xy^{1}(1+ylnx) \\varepsilon x \\varepsilon x\\varepsilon y \\varepsilon y$",
+    "analysis": "求偏导数，高阶偏导。$\\dfrac{\\partial z}{\\partial y}=x^{y}\\ln x$，$\\dfrac{\\partial^{2}z}{\\partial x\\partial y}=\\dfrac{\\partial}{\\partial x}\\left(x^{y}\\ln x\\right)=y x^{y-1}\\ln x+x^{y-1}=x^{y-1}\\left(1+y\\ln x\\right)$。",
     "id": 854,
     "bigSubject": "公共基础",
-    "yearQnum": 15
+    "yearQnum": 16
   },
   {
     "year": "2021",
@@ -11855,7 +11855,7 @@
     "analysis": "常用级数，$p-$级数，交错级数的收敛发散的判断. 排除法，选项A$\\sum_{n=1}^{\\infty}\\frac{8^n}{7^n}\\neq0$，发散；选项B$\\sum_{n=1}^{\\infty}nsin\\frac{1}{n}=\\sum_{n=1}^{\\infty}\\frac{sin\\frac{1}{n}}{\\frac{1}{n}}\\neq0$，发散；选项C，$p-$级数$\\sum_{n=1}^{\\infty}\\frac{1}{n^{\\frac{1}{2}}}$，$\\frac{1}{2}<1$，发散；只有选项D满足题意。",
     "id": 855,
     "bigSubject": "公共基础",
-    "yearQnum": 16
+    "yearQnum": 17
   },
   {
     "year": "2021",
@@ -11868,20 +11868,6 @@
     "answer": "D",
     "analysis": "常用函数的幂级数展开及求和. 代入验算最快，$\\sum_{n=1}^{\\infty}n\\left(\\frac{1}{2}\\right)^{n-1}=1+2\\times\\frac{1}{2}+3\\times\\frac{1}{4}+4\\times\\frac{1}{8}+\\cdots\\cdots>3$，只有D满足。",
     "id": 856,
-    "bigSubject": "公共基础",
-    "yearQnum": 17
-  },
-  {
-    "year": "2021",
-    "smallSubject": "流动阻力和能量损失",
-    "question": "圆管流动中,判断层流与湍流状态的临界雷诺数为:( )",
-    "A": "2320",
-    "B": "400",
-    "C": "1200",
-    "D": "50000",
-    "answer": "A",
-    "analysis": "流体的动力学;流动的状态:层流和紊流,雷诺数. 表征液流惯性力与粘滞力相对大小,可用以判别流动形态的无因次数,记作Re. 雷诺数的定义式为:Re=$\\rho$vd$/\\mu$式中$\\rho$,$\\mu$为液体的密度和动力粘滞系数;v,d为流动的 特征速度和特征长度.雷诺数小时,粘性效应在整个流场中起主要作用,流动为层流.雷诺数 大时,紊动混掺起决定作用,流动为紊流.对于同样的液流装置,由层流转换为紊流时的雷 诺数恒大于紊流向层流转换的雷诺数.前者称上临界雷诺数,其值随试验条件而变,很不稳 定;后者称下临界雷诺数,其值比较稳定,管道条件下:Re<2320为层流;Re=2320为临 界流,也称为临界雷诺数(ReK),其对应的是临界流速(vK);Re>2320为紊流.",
-    "id": 857,
     "bigSubject": "公共基础",
     "yearQnum": 18
   },
@@ -12420,16 +12406,16 @@
   {
     "year": "2021",
     "smallSubject": "动力学",
-    "question": "图所示系统中,四个弹簧均未受力,已知m=50kg,k =9800N/m, 1 k =k =4900N/m,k =19600N/m.则此系统的固有圆频率为:( ) 2 3 4<br><img src=\"/images/id675_2021_58_crop.png\" style=\"max-width:100%;\">",
+    "question": "图所示系统中，四个弹簧均未受力，已知$m=50\\mathrm{kg}$，$k_{1}=9800\\mathrm{N/m}$，$k_{2}=k_{3}=4900\\mathrm{N/m}$，$k_{4}=19600\\mathrm{N/m}$，则此系统的固有圆频率为：（　　）。<br><img src=\"/images/id675_2021_58_crop.png\" style=\"max-width:100%\">",
     "A": "19.8rad/s",
     "B": "22.1rad/s",
     "C": "14.1rad/s",
     "D": "9.9rad/s",
-    "answer": "C",
-    "analysis": "单自由度振动,串并联弹簧的等效刚度. K2与K3并联,再与K1串联,再与K4并联$. 1 1 1 k =k +k =9800, = + ,k =4900, 23 2 3 e123 e1 e23 123 k _k =k 123 +k 4 =4900+19600=5\\times4900, \\omega 0 =\\sqrt eeq =\\sqrt 5\\times4900 =22.1. g 50$",
+    "answer": "B",
+    "analysis": "单自由度振动，串并联弹簧的等效刚度。$k_{2}$与$k_{3}$并联，再与$k_{1}$串联，再与$k_{4}$并联。$k_{23}=k_{2}+k_{3}=9800$，$\\dfrac{1}{k_{123}}=\\dfrac{1}{k_{1}}+\\dfrac{1}{k_{23}}$，得$k_{123}=4900$；$k_{eq}=k_{123}+k_{4}=4900+19600=5\\times4900$，$\\omega_{0}=\\sqrt{\\dfrac{k_{eq}}{m}}=\\sqrt{\\dfrac{5\\times4900}{50}}=22.1\\mathrm{rad/s}$。",
     "id": 896,
     "bigSubject": "公共基础",
-    "yearQnum": 57
+    "yearQnum": 58
   },
   {
     "year": "2021",
@@ -12443,35 +12429,21 @@
     "analysis": "铸铁的力学性能. 铸铁是脆性材料,抗拉强度最低.",
     "id": 897,
     "bigSubject": "公共基础",
-    "yearQnum": 58
-  },
-  {
-    "year": "2021",
-    "smallSubject": "理论力学",
-    "question": "图所示系统中，四个弹簧均未受力，已知$m=50\\mathrm{kg}$，$k_1=9800\\mathrm{N/m}$，$k_2=k_3=4900\\mathrm{N/m}$，$k_4=19600\\mathrm{N/m}$。则此系统的固有圆频率为（ ）。<br><br><img src=\"/images/missing_2021_58.png\" style=\"max-width:100%\">",
-    "A": "19.8rad/s",
-    "B": "22.1rad/s",
-    "C": "14.1rad/s",
-    "D": "9.9rad/s",
-    "answer": "B",
-    "analysis": "本题经过分析可得，该系统为$k_2$、$k_3$并联后与$k_1$串联，然后整体再与$k_4$并联。从而$k_{总}=\\frac{1}{\\frac{1}{k_2+k_3}+\\frac{1}{k_1}}+k_4=24500\\mathrm{N/m}$，代入公式则$\\omega=\\sqrt{\\frac{k_{总}}{m}}=22.1rad/s$。答案选【B】",
-    "id": 898,
-    "bigSubject": "公共基础",
     "yearQnum": 59
   },
   {
     "year": "2021",
     "smallSubject": "剪切与挤压",
-    "question": "图示矩形截面连杆,端部与基础通过铰链轴链接,连杆受拉力 F 作用,已知铰 链轴的许用挤压应力为$[\\sigma]$,则轴的合理直径d是:( ) \\m h F F a 2a d h F b b b F F F<br><img src=\"/images/id730_2021_61_crop.png\" style=\"max-width:100%;\">",
-    "A": "$d\\geq\\frac{F}{b[\\sigma_{bs}]}$",
-    "B": "$d\\geq\\frac{F}{h[\\sigma_{bs}]}$",
-    "C": "$d\\geq\\frac{F}{2b[\\sigma_{bs}]}$",
-    "D": "$d\\geq\\frac{F}{2h[\\sigma_{bs}]}$",
+    "question": "图示矩形截面连杆，端部与基础通过铰链轴链接，连杆受拉力$F$作用，已知铰链轴的许用挤压应力为$[\\sigma_{bs}]$，则轴的合理直径$d$是：（　　）。<br><img src=\"/images/id899_2021_61_stem.png\" style=\"max-width:100%\">",
+    "A": "$d\\geq\\dfrac{F}{b[\\sigma_{bs}]}$",
+    "B": "$d\\geq\\dfrac{F}{h[\\sigma_{bs}]}$",
+    "C": "$d\\geq\\dfrac{F}{2b[\\sigma_{bs}]}$",
+    "D": "$d\\geq\\dfrac{F}{2h[\\sigma_{bs}]}$",
     "answer": "A",
-    "analysis": "挤压实用计算. F 利用中间杆件进行挤压强度校核,$\\sigma = \\leq[\\sigma]$. \\m \\m \\^",
+    "analysis": "挤压实用计算。连杆端部为单剪面双侧挤压，挤压面为直径面$A_{bs}=d\\cdot b$，由$\\sigma_{bs}=\\dfrac{F}{d\\,b}\\leq[\\sigma_{bs}]$，得轴的合理直径$d\\geq\\dfrac{F}{b[\\sigma_{bs}]}$。",
     "id": 899,
     "bigSubject": "公共基础",
-    "yearQnum": 60
+    "yearQnum": 61
   },
   {
     "year": "2021",
@@ -12484,20 +12456,6 @@
     "answer": "B",
     "analysis": "扭转变形计算. 根据扭矩图,DA段内力偶矩为零,DB段与DC段内力偶矩相同,所以$\\varphi_{DA}=0+0=0$,$\\varphi_{DB}=\\varphi_{DC}+0=\\varphi_{DC}$.",
     "id": 900,
-    "bigSubject": "公共基础",
-    "yearQnum": 61
-  },
-  {
-    "year": "2021",
-    "smallSubject": "材料力学",
-    "question": "图示矩形截面连杆，端部与基础通过铰链轴链接，连杆受拉力$F$作用，已知铰链轴的许用挤压应力为$[\\sigma_{bs}]$，则轴的合理直径$d$是（　　）。",
-    "A": "$d \\geq \\frac{F}{t[\\sigma_{bs}]}$",
-    "B": "$d \\geq \\frac{F}{b[\\sigma_{bs}]}$",
-    "C": "$d \\geq \\frac{F}{2t[\\sigma_{bs}]}$",
-    "D": "$d \\geq \\frac{F}{2b[\\sigma_{bs}]}$",
-    "answer": "A",
-    "analysis": "挤压强度条件$\\sigma_{bs}=\\frac{F}{A_{bs}}=\\frac{F}{dt}\\leq[\\sigma_{bs}]$，因此$d\\geq\\frac{F}{t[\\sigma_{bs}]}$。答案选【A】",
-    "id": 901,
     "bigSubject": "公共基础",
     "yearQnum": 62
   },
@@ -12513,7 +12471,7 @@
     "analysis": "弯曲内力. 约束力:FA=F/2, FB=-F/2.FC=-F/2,MC=0.",
     "id": 902,
     "bigSubject": "公共基础",
-    "yearQnum": 63
+    "yearQnum": 64
   },
   {
     "year": "2021",
@@ -12527,21 +12485,21 @@
     "analysis": "弯曲内力. 剪力图与集中力偶的作用位置无关,弯矩图与集中力偶的作用位置有关.",
     "id": 903,
     "bigSubject": "公共基础",
-    "yearQnum": 64
+    "yearQnum": 65
   },
   {
     "year": "2021",
     "smallSubject": "弯曲",
-    "question": "图示梁的正确挠曲线大致形状是: ( ) P P A a a a 直线 直线<br><img src=\"/images/q23/id904_stem.png\" style=\"max-width:100%;\" />",
-    "A": "剪力图、弯矩图均不变",
-    "B": "剪力图、弯矩图均改变",
-    "C": "剪力图不变，弯矩图改变",
-    "D": "剪力图改变，弯矩图不变",
+    "question": "图示梁的正确挠曲线大致形状是：（　　）。<br><img src=\"/images/id904_2021_66_opts.png\" style=\"max-width:100%\">",
+    "A": "图（A）",
+    "B": "图（B）",
+    "C": "图（C）",
+    "D": "图（D）",
     "answer": "B",
-    "analysis": "弯矩变形中挠曲线与弯矩的关系. 1 M 约束力FA=0, FB=2P.所以前段a内的弯矩为零.根据 = ,可得前段a不发生弯 $\\rho$ EI 曲变形.同时,挠曲线还要满足转角连续性条件.",
+    "analysis": "弯矩变形中挠曲线与弯矩的关系。约束力$F_{A}=0$，$F_{B}=2P$，所以前段$a$内的弯矩为零。根据$\\dfrac{1}{\\rho}=\\dfrac{M}{EI}$，前段$a$不发生弯曲变形（为直线）。同时挠曲线还要满足转角连续性条件。",
     "id": 904,
     "bigSubject": "公共基础",
-    "yearQnum": 65
+    "yearQnum": 66
   },
   {
     "year": "2021",
@@ -12555,7 +12513,7 @@
     "analysis": "应力状态分析. F 应力状态的判断只根据主应力,这里轴向拉伸杆件内主应力为$\\sigma = , \\sigma =\\sigma =0$, 1 A 2 3 所以相同.",
     "id": 905,
     "bigSubject": "公共基础",
-    "yearQnum": 66
+    "yearQnum": 67
   },
   {
     "year": "2021",
@@ -12569,7 +12527,7 @@
     "analysis": "最大拉应力强度理论即第一强度理论，强度条件为$\\sigma_1 \\leq [\\sigma]$。答案选【A】",
     "id": 906,
     "bigSubject": "公共基础",
-    "yearQnum": 67
+    "yearQnum": 68
   },
   {
     "year": "2021",
@@ -12583,21 +12541,21 @@
     "analysis": "压弯组合变形的强度计算.$\\sigma= A F + W MZ Z + W My y = 25 0 0 .0 0 1 00 + 2500 0 0 . 0 13 \\times0.05 + 2500 0 0 . 0 13 \\times0.05 =(25+75+75)=175MPa. 6 6$",
     "id": 907,
     "bigSubject": "公共基础",
-    "yearQnum": 68
+    "yearQnum": 69
   },
   {
     "year": "2021",
     "smallSubject": "压杆稳定",
-    "question": "图示四根细长压杆的抗弯刚度EI相同,临界载荷最大的是:( ) F F F F m$^{5}$ m$^{7}$ m$^{9}$ m$^{2}$<br><img src=\"/images/q23/id908_stem.png\" style=\"max-width:100%;\" />",
-    "A": "100Mpa",
-    "B": "150MPa",
-    "C": "175Mpa",
-    "D": "25MPa",
+    "question": "图示四根细长压杆的抗弯刚度$EI$相同，临界载荷最大的是：（　　）。<br><img src=\"/images/id908_2021_70_opts.png\" style=\"max-width:100%\">",
+    "A": "图（A）",
+    "B": "图（B）",
+    "C": "图（C）",
+    "D": "图（D）",
     "answer": "D",
-    "analysis": "压杆稳定的欧拉公式计算.$\\pi2$EI F = ,(A)$\\mu l=1*5=5,(B) \\mu l=0.7*7=4.9,(C) \\mu l=0.5*9=4.5,(D) ]l (\\mu$f$)2 \\mu$l=2*2=4.",
+    "analysis": "压杆稳定的欧拉公式计算。$F_{cr}=\\dfrac{\\pi^{2}EI}{(\\mu l)^{2}}$，（A）$\\mu l=1\\times5=5$；（B）$\\mu l=0.7\\times7=4.9$；（C）$\\mu l=0.5\\times9=4.5$；（D）$\\mu l=2\\times2=4$。（D）的$\\mu l$最小，临界载荷最大。",
     "id": 908,
     "bigSubject": "公共基础",
-    "yearQnum": 69
+    "yearQnum": 70
   },
   {
     "year": "2021",
@@ -12611,7 +12569,7 @@
     "analysis": "静水压强的特性和计算. 静水压力指的是静止液体对相邻接触面所作用的压力.具有如下特征:垂直指向被 压面;同一点各个方向静水压大小相等.",
     "id": 909,
     "bigSubject": "公共基础",
-    "yearQnum": 70
+    "yearQnum": 71
   },
   {
     "year": "2021",
@@ -12625,49 +12583,49 @@
     "analysis": "流体的物性,流体的粘性. 粘度的定义:当流体运动时,在流体层间产生的内摩擦力具有阻碍流体运动的性质, 故将这一特性称为流体的粘性.由于粘性的耗能作用,在无外界能量补充的情况下,运动的 流体将逐渐停止下来.粘性对物体表面附近的流体运动产生重要作用使流速逐层减小并在物 面上为零,在一定条件下也可使流体脱离物体表面(见边界层). 以气体为例,说明粘性形成的原因.气体分子的速度是由平均速度和热运动速度两部分叠加 而成,前者是气体团的宏观速度,后者决定气体的温度.若相邻两部分气体团以不同的宏观 速度运动,由于它们之间有许多分子相互交换,从而带来动量的交换,使气体团的速度有平 均化的趋势,这便是气体粘性的由来. A内聚力又叫粘聚力,是在同种物质内部相邻各部分之间的相互吸引力,这种相互吸引力是 同种物质分子之间存在分子力的表现.只有在各分子十分接近时(小于10e-6厘米)才显示 出来.内聚力能使物质聚集成液体或固体. B气体的粘滞性产生于分子热运动引起的动量交换. C温度变化引起A,B变化. D内摩擦力$\\tau=\\mu$du/dy,内摩擦力与速度梯度有关.",
     "id": 910,
     "bigSubject": "公共基础",
-    "yearQnum": 71
+    "yearQnum": 72
   },
   {
     "year": "2021",
     "smallSubject": "流体动力学基础",
-    "question": "二维不可压缩流场中,v =5x3,v =-15x2y,试求x=1m,y=2m点上的 r s 速度:( )",
+    "question": "二维不可压缩流场中，$v_{r}=5x^{3}$，$v_{s}=-15x^{2}y$，试求$x=1\\mathrm{m}$，$y=2\\mathrm{m}$点上的速度：（　　）。",
     "A": "v=30.41m/s",
     "B": "v=25m/s",
     "C": "v=-30.41m/s",
     "D": "v=-25m/s",
     "answer": "A",
-    "analysis": "流体的运动,二元流. 在直角坐标系中(x=1m,y=2m)的点上$,v =5\\times13=5m/s,v =15\\times12\\times2= r s 2 30m/s,$则v等于$:v=\\sqrt v2+v2 =\\sqrt52+(-30) =30.4m/s. r s$",
+    "analysis": "流体的运动，二元流。在直角坐标系中（$x=1\\mathrm{m}$，$y=2\\mathrm{m}$）的点上，$v_{r}=5\\times1^{3}=5\\ \\mathrm{m/s}$，$v_{s}=-15\\times1^{2}\\times2=-30\\ \\mathrm{m/s}$，则$v=\\sqrt{v_{r}^{2}+v_{s}^{2}}=\\sqrt{5^{2}+(-30)^{2}}=30.4\\ \\mathrm{m/s}$。",
     "id": 911,
-    "bigSubject": "公共基础",
-    "yearQnum": 72
-  },
-  {
-    "year": "2021",
-    "smallSubject": "流体力学",
-    "question": "圆管流动中，判断层流与湍流状态的临界雷诺数为（　　）。",
-    "A": "2320",
-    "B": "4000",
-    "C": "10000",
-    "D": "500",
-    "answer": "A",
-    "analysis": "圆管流动中，临界雷诺数$Re_{cr}=2320$，当$Re<2320$时为层流，$Re>2320$时为湍流。答案选【A】",
-    "id": 912,
     "bigSubject": "公共基础",
     "yearQnum": 73
   },
   {
     "year": "2021",
-    "smallSubject": "孔口管嘴管道流动",
-    "question": "A,B为并联管1,2,3的两连接端点,A,B两点之间的水头损失为:( )",
-    "A": "h =h +h +h",
-    "B": "h =h +h `[\\ `1 `2 `3 `[\\ `1 `2",
-    "C": "h =h +h",
-    "D": "h =h =h =h",
-    "answer": "D",
-    "analysis": "管道流动,复杂管道流动.  组成并联管路的简单管道的水头损失均相等,即:h =h =h =h ,根据连 `2 `3 `4 `[\\ 续性方程有S l Q 2 =S l Q 2 =S l Q 2,由于各管的长度,直径,粗糙度等不同,因此 $O_{2}$ 2 2 $O_{3}$ 3 3 O4 4 4 流量也不相等,但总流量忽然要满足连续性条件,即:Q =q +Q +Q +Q , 1 1 2 3 4 Q +q =Q +Q +Q . 5 2 2 3 4",
-    "id": 913,
+    "smallSubject": "流体力学",
+    "question": "圆管流动中，判断层流与湍流状态的临界雷诺数为：（　　）。",
+    "A": "$2320$",
+    "B": "$400$",
+    "C": "$1200$",
+    "D": "$50000$",
+    "answer": "A",
+    "analysis": "流体的动力学；流动状态：层流和紊流。管道条件下：$Re<2320$为层流，$Re=2320$为临界流（临界雷诺数$Re_{K}$），$Re>2320$为紊流。",
+    "id": 912,
     "bigSubject": "公共基础",
     "yearQnum": 74
+  },
+  {
+    "year": "2021",
+    "smallSubject": "孔口管嘴管道流动",
+    "question": "A、B为并联管1、2、3的两连接端点，A、B两点之间的水头损失为：（　　）。",
+    "A": "$h_{fAB}=h_{f1}+h_{f2}+h_{f3}$",
+    "B": "$h_{fAB}=h_{f1}+h_{f2}$",
+    "C": "$h_{fAB}=h_{f2}+h_{f3}$",
+    "D": "$h_{fAB}=h_{f1}=h_{f2}=h_{f3}$",
+    "answer": "D",
+    "analysis": "管道流动，复杂管道流动。组成并联管路的各简单管道的水头损失均相等，即$h_{f1}=h_{f2}=h_{f3}=h_{fAB}$；由于各管的长度、直径、粗糙度等不同，流量不相等，但总流量满足连续性方程$Q=q_{1}+Q_{2}+Q_{3}$。",
+    "id": 913,
+    "bigSubject": "公共基础",
+    "yearQnum": 75
   },
   {
     "year": "2021",
@@ -12680,20 +12638,6 @@
     "answer": "B",
     "analysis": "明渠恒定流,及其形成条件. (1)明渠中水流必须是恒定流动的; (2)流量沿程不变,沿程没有水流分出或汇 入 (流量不变); (3)明渠必须是长而值的顺坡(i>0)棱柱形渠 道,既要求i沿程不变 (4)渠道粗糙系数(n)沿程不变,且没有建筑 物的局部干扰 只有顺坡才能形成均匀流, 平坡和逆坡都不行. 总结:两个不变,三个相等,两个平衡.",
     "id": 914,
-    "bigSubject": "公共基础",
-    "yearQnum": 75
-  },
-  {
-    "year": "2021",
-    "smallSubject": "流体力学",
-    "question": "A、B为并联管1、2、3的两连接端点，A、B两点之间的水头损失为（　　）。",
-    "A": "$h_{fab}=h_{f1}+h_{f2}+h_{f3}$",
-    "B": "$h_{fab}=h_{f1}+h_{f2}$",
-    "C": "$h_{fab}=h_{f2}+h_{f3}$",
-    "D": "$h_{fab}=h_{f1}=h_{f2}=h_{f3}$",
-    "answer": "D",
-    "analysis": "并联管路的特点是各支管的水头损失相等，即$h_{f1}=h_{f2}=h_{f3}=h_{fab}$。答案选【D】",
-    "id": 915,
     "bigSubject": "公共基础",
     "yearQnum": 76
   },
@@ -12709,7 +12653,7 @@
     "analysis": "相似原理和量纲分析. 已知s=1.5m2;u=108km/h=30m/s,um=45 m/s,$\\rho=\\rho m,v=vm$根据雷诺数相等, 即: om = ommm p pm 得$:s =. o /. pm/s=. 30 /\\times1\\times1.5=1m2. g om p 45$",
     "id": 916,
     "bigSubject": "公共基础",
-    "yearQnum": 77
+    "yearQnum": 78
   },
   {
     "year": "2021",
@@ -12723,63 +12667,63 @@
     "analysis": "洛伦兹力. 运动电荷在磁场中受到洛伦兹力,可根据左手定则判断运动电子受到洛伦兹力的方 向.",
     "id": 917,
     "bigSubject": "公共基础",
-    "yearQnum": 78
-  },
-  {
-    "year": "2021",
-    "smallSubject": "电路",
-    "question": "图示电路中,电压U 为:( ) [\\<br><img src=\"/images/id982_2021_80_3.png\" style=\"max-width:100%;\">",
-    "A": "5V",
-    "B": "-4V",
-    "C": "3V",
-    "D": "-3V",
-    "answer": "D",
-    "analysis": "KVL定律. 列KVL方程: 4-U +5-12=0$\\Rightarrow U =-3V. [$\\ [\\",
-    "id": 918,
-    "bigSubject": "公共基础",
     "yearQnum": 79
   },
   {
     "year": "2021",
     "smallSubject": "电路",
-    "question": "图示电路中,电压源单独作用时,电压U=U'=20V:则电流源单独作用时电 压U=U''为:( )<br><img src=\"/images/id983_2021_81_1.png\" style=\"max-width:100%;\">",
-    "A": "2R",
-    "B": "-2R",
-    "C": "0.4R",
-    "D": "-0.4R",
+    "question": "图示电路中，电压$U_{AB}$为：（　　）。<br><img src=\"/images/id982_2021_80_3.png\" style=\"max-width:100%\">",
+    "A": "5V",
+    "B": "-4V",
+    "C": "3V",
+    "D": "-3V",
     "answer": "D",
-    "analysis": "叠加定理. (1)电压源单独作用时$, U' = 100R2 =20\\Rightarrow R =4R 1 2 R_{1}:R2 (2)$电流源单独作用时$, U'' = R_{1}\\times(;2)R2 =-0.4R. R_{1}:R2$",
-    "id": 919,
+    "analysis": "KVL定律。列KVL方程：$4-U_{AB}+5-12=0$，解得$U_{AB}=-3\\mathrm{V}$。",
+    "id": 918,
     "bigSubject": "公共基础",
     "yearQnum": 80
   },
   {
     "year": "2021",
     "smallSubject": "电路",
-    "question": "图示电路中,若$\\omega L=\\frac{1}{\\omega C}=R$,则:( )<br><img src=\"/images/id984_2021_82_2.png\" style=\"max-width:100%;\">",
-    "A": "Z =3R,Z = 1 R",
-    "B": "$Z_1=R,Z_2=3R$",
-    "C": "Z =3R,Z =R",
-    "D": "Z =Z =R",
+    "question": "图示电路中,电压源单独作用时,电压U=U'=20V:则电流源单独作用时电 压U=U''为:( )<br><img src=\"/images/id983_2021_81_1.png\" style=\"max-width:100%;\">",
+    "A": "$2R_{1}$",
+    "B": "$-2R_{1}$",
+    "C": "$0.4R_{1}$",
+    "D": "$-0.4R_{1}$",
     "answer": "D",
-    "analysis": "阻抗. 1 Z =R+j.wL- /=R 1 WC 1 1 1 1 = + +jwC= $\\Rightarrow Z =R. 2 Z2 R dqL R$",
-    "id": 920,
+    "analysis": "叠加定理。（1）电压源单独作用时，$U^{\\prime}=\\dfrac{100R_{2}}{R_{1}+R_{2}}=20\\Rightarrow R_{1}=4R_{2}$；（2）电流源单独作用时，$U^{\\prime\\prime}=\\dfrac{R_{1}\\times(-2)R_{2}}{R_{1}+R_{2}}=-0.4R_{1}$。",
+    "id": 919,
     "bigSubject": "公共基础",
     "yearQnum": 81
   },
   {
     "year": "2021",
     "smallSubject": "电路",
-    "question": "某 RL 串联电路在u=U sin$\\omega t$的激励下,等效复阻抗Z=100+j$100\\Omega$,那么, g 如果u=U sin$2\\omega$t,电路的功率因数$\\lambda$为:( ) g",
+    "question": "图示电路中,若$\\omega L=\\frac{1}{\\omega C}=R$,则:( )<br><img src=\"/images/id984_2021_82_2.png\" style=\"max-width:100%;\">",
+    "A": "$Z_{1}=3R,\\ Z_{2}=\\dfrac{1}{3}R$",
+    "B": "$Z_{1}=R,\\ Z_{2}=3R$",
+    "C": "$Z_{1}=3R,\\ Z_{2}=R$",
+    "D": "$Z_{1}=Z_{2}=R$",
+    "answer": "D",
+    "analysis": "阻抗。$Z_{1}=R+j\\omega L-\\dfrac{1}{j\\omega C}=R+jR-jR=R$；$\\dfrac{1}{Z_{2}}=\\dfrac{1}{R}+\\dfrac{1}{j\\omega L}+j\\omega C=\\dfrac{1}{R}$，故$Z_{2}=R$。",
+    "id": 920,
+    "bigSubject": "公共基础",
+    "yearQnum": 82
+  },
+  {
+    "year": "2021",
+    "smallSubject": "电路",
+    "question": "某RL串联电路在$u=U_{g}\\sin\\omega t$的激励下，等效复阻抗$Z=100+j100\\ \\Omega$，那么，如果$u=U_{g}\\sin2\\omega t$，电路的功率因数$\\lambda$为：（　　）。",
     "A": "0.707",
     "B": "-0.707",
     "C": "0.894",
     "D": "0.447",
     "answer": "D",
-    "analysis": "功率因数. 当$u=U_g\\sin2\\omega t$时,$Z=R+j2\\omega L=100+j200\\Omega$,$\\lambda=\\cos\\varphi=\\frac{100}{\\sqrt{100^2+200^2}}=0.447$.",
+    "analysis": "功率因数。当$u=U_{g}\\sin2\\omega t$时，$Z=R+j2\\omega L=100+j200\\ \\Omega$，$\\lambda=\\cos\\varphi=\\dfrac{100}{\\sqrt{100^{2}+200^{2}}}=0.447$。",
     "id": 921,
     "bigSubject": "公共基础",
-    "yearQnum": 82
+    "yearQnum": 83
   },
   {
     "year": "2021",
@@ -12793,21 +12737,21 @@
     "analysis": "暂态分析. 由换路定则通过电感的电流不能突变,电容两端的电压不能突变分析电路.",
     "id": 922,
     "bigSubject": "公共基础",
-    "yearQnum": 83
+    "yearQnum": 84
   },
   {
     "year": "2021",
     "smallSubject": "电机与变压器",
-    "question": "设图示变压器为理想器件,且u为正弦电压,R =R ,u 和u 的有效值为U 和 L1 L2 1 2 1 U ,开关S闭合后,电路中的:( ) 2<br><img src=\"/images/id1021_2021_85_2.png\" style=\"max-width:100%;\">",
-    "A": "U 不变,U 也不变",
-    "B": "$U_1$变小，$U_2$也变小",
-    "C": "U 变小,U 不变",
-    "D": "U 不变,U 变小",
+    "question": "设图示变压器为理想器件，且$u$为正弦电压，$R_{L1}=R_{L2}$，$u_{1}$和$u_{2}$的有效值为$U_{1}$和$U_{2}$，开关S闭合后，电路中的：（　　）。<br><img src=\"/images/id1021_2021_85_2.png\" style=\"max-width:100%\">",
+    "A": "$U_{1}$不变，$U_{2}$也不变",
+    "B": "$U_{1}$变小，$U_{2}$也变小",
+    "C": "$U_{1}$变小，$U_{2}$不变",
+    "D": "$U_{1}$不变，$U_{2}$变小",
     "answer": "B",
-    "analysis": "变压器. 闭合后,折合到一次侧的阻抗为Z' =k2(R$\\parallel$R ),由于阻抗变小,一次侧电压变小, L 1 2 线圈匝数k不变,U 也变小,因此选B. 2",
+    "analysis": "变压器。S闭合后，折合到一次侧的阻抗为$Z_{L}^{\\prime}=k^{2}(R_{L1}\\parallel R_{L2})$，由于阻抗变小，一次侧电压变小，线圈匝数比$k$不变，$U_{2}$也变小，因此选B。",
     "id": 923,
     "bigSubject": "公共基础",
-    "yearQnum": 84
+    "yearQnum": 85
   },
   {
     "year": "2021",
@@ -12821,7 +12765,7 @@
     "analysis": "三相异步电动机. 任意改变两根相线的相序可以改变三相异步电动机的转动方向.",
     "id": 924,
     "bigSubject": "公共基础",
-    "yearQnum": 85
+    "yearQnum": 86
   },
   {
     "year": "2021",
@@ -12835,49 +12779,49 @@
     "analysis": "信号的分类 . 数字信号是指数值和时间都离散的信号,是现代信息技术中最常用的一种代码信号.",
     "id": 925,
     "bigSubject": "公共基础",
-    "yearQnum": 86
-  },
-  {
-    "year": "2021",
-    "smallSubject": "信号与信息",
-    "question": "模拟信号u (t)和u (t)的幅值频谱分别如图<br><img src=\"/images/id1109_2021_88_1.png\" style=\"max-width:100%;\">",
-    "A": "$u_1(t)$和$u_2(t)$都是非周期性时间信号",
-    "B": "$u_1(t)$和$u_2(t)$都是周期性时间信号",
-    "C": "$u_1(t)$是周期性时间信号，$u_2(t)$是非周期性时间信号",
-    "D": "u (t)是非周期性时间信号,u (t)是周期性时间信号",
-    "answer": "A",
-    "analysis": "频谱分析. 周期信号的幅值频谱是离散的,非周期信号的幅值频谱是连续的.",
-    "id": 926,
-    "bigSubject": "公共基础",
     "yearQnum": 87
   },
   {
     "year": "2021",
     "smallSubject": "信号与信息",
-    "question": "某周期信号u(t)的幅频特性如图<br><img src=\"/images/id1110_2021_89_2.png\" style=\"max-width:100%;\">",
-    "A": "信号的谐波结构改变,波形改变",
-    "B": "信号的谐波结构改变,波形不变",
-    "C": "信号的谐波结构不变,波形不变",
-    "D": "信号的谐波结构不变,波形改变",
-    "answer": "C",
-    "analysis": "滤波器. 低通滤波的频率是10KHz,u(t)信号没有10KHz以上的信号,所以不变.",
-    "id": 927,
+    "question": "模拟信号$u_{1}(t)$和$u_{2}(t)$的幅值频谱分别如图（A）和图（B）所示，则：（　　）。<br><img src=\"/images/id1109_2021_88_1.png\" style=\"max-width:100%\">",
+    "A": "$u_{1}(t)$和$u_{2}(t)$都是非周期性时间信号",
+    "B": "$u_{1}(t)$和$u_{2}(t)$都是周期性时间信号",
+    "C": "$u_{1}(t)$是周期性时间信号，$u_{2}(t)$是非周期性时间信号",
+    "D": "$u_{1}(t)$是非周期性时间信号，$u_{2}(t)$是周期性时间信号",
+    "answer": "A",
+    "analysis": "频谱分析。周期信号的幅值频谱是离散的，非周期信号的幅值频谱是连续的。两图均为离散谱线，故都是周期性时间信号。",
+    "id": 926,
     "bigSubject": "公共基础",
     "yearQnum": 88
   },
   {
     "year": "2021",
-    "smallSubject": "数字电子技术",
-    "question": "对逻辑表达式ABC+AD+BD+CD的化简结果是:( )<br><img src=\"/images/q23/id928_stem.png\" style=\"max-width:100%;\" />",
+    "smallSubject": "信号与信息",
+    "question": "某周期信号$u(t)$的幅频特性如图（A）所示，某低通滤波器的幅频特性如图（B）所示，当将信号$u(t)$通过该低通滤波器处理后，则：（　　）。<br><img src=\"/images/id1110_2021_89_2.png\" style=\"max-width:100%\">",
     "A": "信号的谐波结构改变，波形改变",
     "B": "信号的谐波结构改变，波形不变",
     "C": "信号的谐波结构不变，波形不变",
     "D": "信号的谐波结构不变，波形改变",
-    "answer": "D",
-    "analysis": "逻辑函数化简. 由逻辑代数化简法: ABC+AD+BD+CD =ABC+(A+B+C)D =ABC+ABCD =ABC+D",
-    "id": 928,
+    "answer": "C",
+    "analysis": "滤波器。低通滤波器的截止频率是$10\\mathrm{kHz}$，$u(t)$信号没有$10\\mathrm{kHz}$以上的分量，全部谐波均可通过，所以谐波结构不变、波形不变。",
+    "id": 927,
     "bigSubject": "公共基础",
     "yearQnum": 89
+  },
+  {
+    "year": "2021",
+    "smallSubject": "数字电子技术",
+    "question": "对逻辑表达式$ABC+\\overline{A}D+\\overline{B}D+\\overline{C}D$的化简结果是：（　　）。",
+    "A": "$D$",
+    "B": "$\\overline{D}$",
+    "C": "$ABC\\overline{D}$",
+    "D": "$ABC+D$",
+    "answer": "D",
+    "analysis": "逻辑函数化简。由逻辑代数化简法：$ABC+\\overline{A}D+\\overline{B}D+\\overline{C}D=ABC+(\\overline{A}+\\overline{B}+\\overline{C})D=ABC+\\overline{ABC}\\,D=ABC+D$。",
+    "id": 928,
+    "bigSubject": "公共基础",
+    "yearQnum": 90
   },
   {
     "year": "2021",
@@ -12891,7 +12835,7 @@
     "analysis": "逻辑函数描述. F=AB+AB为异或运算,运算规则为不同出1,相同出0,因此可以看出答案选C.",
     "id": 929,
     "bigSubject": "公共基础",
-    "yearQnum": 90
+    "yearQnum": 91
   },
   {
     "year": "2021",
@@ -12905,49 +12849,49 @@
     "analysis": "逻辑函数描述. 由真值表F 写逻辑式时,取值为-1\\|的项为逻辑加,而每一个F=1对应输入为逻辑 乘,输入为-0\\|写成反变量,输入为-1\\|写成原变量.",
     "id": 930,
     "bigSubject": "公共基础",
-    "yearQnum": 91
-  },
-  {
-    "year": "2021",
-    "smallSubject": "模拟电子技术",
-    "question": "二极管应用电路如图<br><img src=\"/images/id1141_2021_93_5.png\" style=\"max-width:100%;\">",
-    "A": "OV",
-    "B": "7.07V",
-    "C": "3.18V",
-    "D": "4.5V",
-    "answer": "C",
-    "analysis": "半波整流. U.$= 1 \\int \\pi \\sqrt2 U sin\\omega t d\\omega t= \\sqrt2 U =0.45U =0.45\\times 10 =3.18V 2\\pi 0 2 \\pi 2 2 \\sqrt2$",
-    "id": 931,
-    "bigSubject": "公共基础",
     "yearQnum": 92
   },
   {
     "year": "2021",
     "smallSubject": "模拟电子技术",
-    "question": "图示电路中,运算放大器输出电压的极限值为$\\pm U ,$当输入电压u =1V, iM c1 u =2sin$\\omega t$时,输出电压波形为:( ) c2<br><img src=\"/images/q23/id932_stem.png\" style=\"max-width:100%;\" />",
-    "A": "OV",
-    "B": "7.07V",
-    "C": "3.18V",
-    "D": "4.5V",
-    "answer": "A",
-    "analysis": "集成运算放大器非线性应用. u =1V,u =u =2sin$\\omega t V,u <u$ 时,输出负的最大电压,u >u 时, <oi1 : c2 : ; : ; 输出正的最大电压,A正确.",
-    "id": 932,
+    "question": "二极管应用电路如图（A）所示，电路的激励$u_{i}$如图（B）所示，设二极管为理想器件，则电路的输出电压$u_{o}$的平均值$U_{o}$为：（　　）。<br><img src=\"/images/id1141_2021_93_5.png\" style=\"max-width:100%\">",
+    "A": "$0\\mathrm{V}$",
+    "B": "$7.07\\mathrm{V}$",
+    "C": "$3.18\\mathrm{V}$",
+    "D": "$4.5\\mathrm{V}$",
+    "answer": "C",
+    "analysis": "半波整流。$U_{o}=\\dfrac{1}{2\\pi}\\displaystyle\\int_{0}^{\\pi}\\sqrt{2}U_{2}\\sin\\omega t\\,\\mathrm{d}(\\omega t)=\\dfrac{\\sqrt{2}}{\\pi}U_{2}=0.45U_{2}=0.45\\times10=3.18\\mathrm{V}$。",
+    "id": 931,
     "bigSubject": "公共基础",
     "yearQnum": 93
   },
   {
     "year": "2021",
+    "smallSubject": "模拟电子技术",
+    "question": "图示电路中，运算放大器输出电压的极限值为$\\pm U_{oM}$，当输入电压$u_{i1}=1\\mathrm{V}$，$u_{i2}=2\\sin\\omega t\\ \\mathrm{V}$时，输出电压波形为：（　　）。<br><img src=\"/images/id932_2021_94_opts.png\" style=\"max-width:100%\">",
+    "A": "图（A）",
+    "B": "图（B）",
+    "C": "图（C）",
+    "D": "图（D）",
+    "answer": "A",
+    "analysis": "集成运算放大器非线性应用（过零比较器）。$u_{-}=u_{i1}=1\\mathrm{V}$，$u_{+}=u_{i2}=2\\sin\\omega t\\ \\mathrm{V}$。当$u_{+}<u_{-}$时输出负的最大电压$-U_{oM}$，当$u_{+}>u_{-}$时输出正的最大电压$+U_{oM}$，故输出波形如图（A）。",
+    "id": 932,
+    "bigSubject": "公共基础",
+    "yearQnum": 94
+  },
+  {
+    "year": "2021",
     "smallSubject": "数字电子技术",
-    "question": "图示逻辑门的输出F 和F 分别为:( ) 1 2<br><img src=\"/images/id1070_2021_95_1.png\" style=\"max-width:100%;\">",
+    "question": "图示逻辑门的输出$F_{1}$和$F_{2}$分别为：（　　）。<br><img src=\"/images/id1070_2021_95_1.png\" style=\"max-width:100%\">",
     "A": "$A$和1",
     "B": "1和$\\overline{B}$",
     "C": "$A$和0",
     "D": "1和$B$",
     "answer": "C",
-    "analysis": "基本逻辑关系$. F =A\\cdot1=A, F =B+1=0, C$正确. 1 2",
+    "analysis": "基本逻辑关系。$F_{1}=A\\cdot1=A$，$F_{2}=\\overline{B+1}=0$，C正确。",
     "id": 933,
     "bigSubject": "公共基础",
-    "yearQnum": 94
+    "yearQnum": 95
   },
   {
     "year": "2021",
@@ -12961,7 +12905,7 @@
     "analysis": "移位寄存器. 由D触发器构成的串入串出的寄存器,数据由右端输入,每到一个上升沿,左移 一位,构成三位左移寄存器.",
     "id": 934,
     "bigSubject": "公共基础",
-    "yearQnum": 95
+    "yearQnum": 96
   },
   {
     "year": "2021",
@@ -12975,7 +12919,7 @@
     "analysis": "计算机分类. 现在使用的PC机属于微型,通用计算机,C正确.",
     "id": 935,
     "bigSubject": "公共基础",
-    "yearQnum": 96
+    "yearQnum": 97
   },
   {
     "year": "2021",
@@ -12989,7 +12933,7 @@
     "analysis": "目前微机系统内常用的外存储器为硬盘存储器,A正确.",
     "id": 936,
     "bigSubject": "公共基础",
-    "yearQnum": 97
+    "yearQnum": 98
   },
   {
     "year": "2021",
@@ -13003,7 +12947,7 @@
     "analysis": "计算机软件组成. 计算机软件分为系统软件和应用软件,C正确.",
     "id": 937,
     "bigSubject": "公共基础",
-    "yearQnum": 98
+    "yearQnum": 99
   },
   {
     "year": "2021",
@@ -13017,7 +12961,7 @@
     "analysis": "计算机软件组成. 支撑软件是支撑各种软件的开发与维护的软件,又称为软件开发环境.它主要包括 环境数据库,各种接口软件和工具组,B正确.",
     "id": 938,
     "bigSubject": "公共基础",
-    "yearQnum": 99
+    "yearQnum": 100
   },
   {
     "year": "2021",
@@ -13031,7 +12975,7 @@
     "analysis": "信息的特征. 信息的基本特征:传递性,共享性,依附性和可处理性,价值相对性,时效性,真 伪性,不完整性,普遍性和可增值性,A错误.",
     "id": 939,
     "bigSubject": "公共基础",
-    "yearQnum": 100
+    "yearQnum": 101
   },
   {
     "year": "2021",
@@ -13045,7 +12989,7 @@
     "analysis": "多媒体数据在计算机内的表示. 分辨率是指图像在水平和垂直方向上的所容纳的最大像素数.图像分辨率是水平像 素数*垂直像素数,D正确.",
     "id": 940,
     "bigSubject": "公共基础",
-    "yearQnum": 101
+    "yearQnum": 102
   },
   {
     "year": "2021",
@@ -13059,7 +13003,7 @@
     "analysis": "计算机病毒. 计算机病毒是编制或者在计算机程序中插入的破坏计算机功能或者破坏数据,影响 计算机使用并且能够自我复制的一组计算机指令或者程序代码,B错误.",
     "id": 941,
     "bigSubject": "公共基础",
-    "yearQnum": 102
+    "yearQnum": 103
   },
   {
     "year": "2021",
@@ -13073,7 +13017,7 @@
     "analysis": "操作系统的功能. 操作系统的存储管理功能包括:分页存储管理,段式存储管理,段页式存储管理和 虚拟存储管理,D错误.",
     "id": 942,
     "bigSubject": "公共基础",
-    "yearQnum": 103
+    "yearQnum": 104
   },
   {
     "year": "2021",
@@ -13087,7 +13031,7 @@
     "analysis": "网络协议. 协议三要素:语法,语义和同步. (1)语法:数据的控制信息的结构或格式. (2)语义:需要发生何种控制信息,完成何种动作以及做出何种应答. (3)同步:事件实现顺序的详细说明.",
     "id": 943,
     "bigSubject": "公共基础",
-    "yearQnum": 104
+    "yearQnum": 105
   },
   {
     "year": "2021",
@@ -13101,7 +13045,7 @@
     "analysis": "计算机网络. 按数据交换方式分,计算机网络可分为电路交换网,报文交换网和分组交换网,D 正确.",
     "id": 944,
     "bigSubject": "公共基础",
-    "yearQnum": 105
+    "yearQnum": 106
   },
   {
     "year": "2021",
@@ -13115,7 +13059,7 @@
     "analysis": "等额资金回收公式. c(1:c)n c(1:c)n 按等额支付资金回收公式A=P ,式中: 称为资金回收系数,记为 (1:c)n^{1} (1:c)n^{1} ($P/A,i,n)$.$P=P\\times(P/A,8$%$,5)$,$A= P = 1000 =250.46$万元.$(P/A,8$%$,5) 3.9927$",
     "id": 945,
     "bigSubject": "公共基础",
-    "yearQnum": 106
+    "yearQnum": 107
   },
   {
     "year": "2021",
@@ -13129,7 +13073,7 @@
     "analysis": "建设期利息的定义. 建设期利息的定义:工程项目在建设期间内发生并计入固定资产的利息.",
     "id": 946,
     "bigSubject": "公共基础",
-    "yearQnum": 107
+    "yearQnum": 108
   },
   {
     "year": "2021",
@@ -13143,7 +13087,7 @@
     "analysis": "优先股的优先权. 与普通股票相比较,优先股票的特点表现在如下四个方面: (1)股息率固定优先股票在发行之时就约定了固定的股息率,今后无论公司经营状况和盈利 水平如何变化,该股息率不变. (2)股息分派优先在股份公司盈利分配顺序上,优先股票排在普通股票之前. (3)剩余资产分配优先当股份公司因破产或解散进行清算时,在对公司剩余财产的分配上, 优先股股东排在债权人之后,但排在普通股股东之前. (4)一般无表决权,优先股股东通常不享有公司的经营参与权.",
     "id": 947,
     "bigSubject": "公共基础",
-    "yearQnum": 108
+    "yearQnum": 109
   },
   {
     "year": "2021",
@@ -13157,7 +13101,7 @@
     "analysis": "利息备付率. 利息备付率低于1,表示没有足够资金支付利息,偿债风险很大.",
     "id": 948,
     "bigSubject": "公共基础",
-    "yearQnum": 109
+    "yearQnum": 110
   },
   {
     "year": "2021",
@@ -13171,7 +13115,7 @@
     "analysis": "净收益 $P' =A\\times(P/A,12%,10)=200\\times5.6502=1130.04$万元, 净收益=P'-P=1130.04-1000=130.04万元, 转化为净年值$:130.04=\\times(P/A,12%,10)=A\\times5.6502 A= 130.04 =23.02$万元. 5.6502",
     "id": 949,
     "bigSubject": "公共基础",
-    "yearQnum": 110
+    "yearQnum": 111
   },
   {
     "year": "2021",
@@ -13185,7 +13129,7 @@
     "analysis": "盈亏平衡分析 线性盈亏平衡分析的基本假设条件包括: 1.生产量等于销售量; 2.每批生产量的固定成本不变,单位变动成本与生产量成正比变化; 3.销售单价不变,销售收入是销售量的线性函数. 4.只按单一产品计算,若生产多种产品,产品结构比例不变.",
     "id": 950,
     "bigSubject": "公共基础",
-    "yearQnum": 111
+    "yearQnum": 112
   },
   {
     "year": "2021",
@@ -13199,7 +13143,7 @@
     "analysis": "方案经济比选中的净年值比较法 甲$:P' =A\\times(P/A,10%,10)=52\\times6.1446=319.52$万元, 净收益=P'-P=319.52-300=19.52万元, 乙$:P' =A\\times(P/A,10%,10)=30\\times6.1446=184.34$万元, 净收益=P'-P=184.34-200=-15.66万元, 选择甲方案.",
     "id": 951,
     "bigSubject": "公共基础",
-    "yearQnum": 112
+    "yearQnum": 113
   },
   {
     "year": "2021",
@@ -13213,7 +13157,7 @@
     "analysis": "价值工程分析阶段的工作 价值工程分析阶段的工作有功能定义,功能整理,功能成本分析,功能评价,确定 改进范围.",
     "id": 952,
     "bigSubject": "公共基础",
-    "yearQnum": 113
+    "yearQnum": 114
   },
   {
     "year": "2021",
@@ -13227,7 +13171,7 @@
     "analysis": "《建筑法》  第十四条 从事建筑活动的专业技术人员,应当依法取得相应的执业资格证书,并 在执业资格证书许可的范围内从事建筑活动.",
     "id": 953,
     "bigSubject": "公共基础",
-    "yearQnum": 114
+    "yearQnum": 115
   },
   {
     "year": "2021",
@@ -13241,7 +13185,7 @@
     "analysis": "《安全生产法》 第三十七条 生产经营单位对重大危险源应当登记建档,进行定期检测,评估,监 控,并制定应急预案,告知从业人员和相关人员在紧急情况下应当采取的应急措施.",
     "id": 954,
     "bigSubject": "公共基础",
-    "yearQnum": 115
+    "yearQnum": 116
   },
   {
     "year": "2021",
@@ -13255,7 +13199,7 @@
     "analysis": "《招标投标法》 第十六条第二款规定,招标公告应当载明招标人的名称和地址,招标项目的性质, 数量,实施地点和时间以及获取招标文件的办法等事项.",
     "id": 955,
     "bigSubject": "公共基础",
-    "yearQnum": 116
+    "yearQnum": 117
   },
   {
     "year": "2021",
@@ -13269,7 +13213,7 @@
     "analysis": "承诺 承诺必须与要约的内容完全一致.即承诺必须是无条件地接受要约的所有条件.",
     "id": 956,
     "bigSubject": "公共基础",
-    "yearQnum": 117
+    "yearQnum": 118
   },
   {
     "year": "2021",
@@ -13283,7 +13227,7 @@
     "analysis": "《中华人民共和国节约能源法》 《中华人民共和国节约能源法》所称节约能源(简称节能),是指加强用能管理,采 取技术上可行,经济上合理以及环境和社会可以承受的措施.",
     "id": 957,
     "bigSubject": "公共基础",
-    "yearQnum": 118
+    "yearQnum": 119
   },
   {
     "year": "2021",
@@ -13297,21 +13241,7 @@
     "analysis": "《建设工程质量管理条例》  折叠施工单位必须建立,健全施工质量的检验制度,严格工序管理,作好隐蔽工 程的质量检查和记录.隐蔽工程在隐蔽前,施工单位应当通知建设单位和建设工程质量监督 机构.",
     "id": 958,
     "bigSubject": "公共基础",
-    "yearQnum": 119
-  },
-  {
-    "bigSubject": "公共基础",
-    "smallSubject": "法律法规",
-    "year": "2021",
-    "yearQnum": 120,
-    "question": "某工程施工单位完成了楼板钢筋绑扎工序，在浇筑混凝土前需要进行隐蔽质量验收，根据《建设工程质量管理条例》规定，施工单位在隐蔽前应当通知的单位是（　　）。",
-    "A": "建设单位和监理单位",
-    "B": "建设单位和建设工程质量监督机构",
-    "C": "监理单位和设计单位",
-    "D": "设计单位和建设工程质量监督机构",
-    "answer": "B",
-    "analysis": "施工单位必须建立、健全施工质量的检验制度，严格工序管理，作好隐蔽工程的质量检查和记录。隐蔽工程在隐蔽前，施工单位应当通知建设单位和建设工程质量监督机构。答案选B。",
-    "id": 959
+    "yearQnum": 120
   },
   {
     "year": "2022",
@@ -28502,5 +28432,75 @@
     "id": 2045,
     "bigSubject": "公共基础",
     "yearQnum": 95
+  },
+  {
+    "year": "2021",
+    "bigSubject": "公共基础",
+    "id": 2046,
+    "yearQnum": 15,
+    "smallSubject": "积分学",
+    "question": "设$L$是圆$x^{2}+y^{2}=-2x$，取逆时针方向，则对坐标的曲线积分$\\int_{L}(x-y)\\mathrm{d}x+(x+y)\\mathrm{d}y$等于：（　　）。",
+    "A": "$-4\\pi$",
+    "B": "$-2\\pi$",
+    "C": "$0$",
+    "D": "$2\\pi$",
+    "answer": "D",
+    "analysis": "第二类曲线积分——参数方程法。$L$是圆$x^{2}+2x+1+y^{2}=1$，即$(x+1)^{2}+y^{2}=1$，取参数方程$x+1=\\cos\\theta$，$y=\\sin\\theta$，$0\\leq\\theta\\leq2\\pi$。代入得$\\int_{0}^{2\\pi}\\left[(\\cos\\theta-\\sin\\theta-1)(-\\sin\\theta)+(\\cos\\theta+\\sin\\theta+1)\\cos\\theta\\right]\\mathrm{d}\\theta=\\int_{0}^{2\\pi}1\\,\\mathrm{d}\\theta=2\\pi$。"
+  },
+  {
+    "year": "2021",
+    "bigSubject": "公共基础",
+    "id": 2047,
+    "yearQnum": 57,
+    "smallSubject": "动力学",
+    "question": "质量为$m$、半径为$R$的均质圆轮绕垂直于图面的水平轴$O$转动，在力偶$M$的作用下，其角速度为常数$\\omega$。在图示瞬时，轮心$C$在最低位置，这时轴承$O$施加于轮的附加动反力为：（　　）。<br><img src=\"/images/id2047_2021_57_stem.png\" style=\"max-width:100%\">",
+    "A": "$\\dfrac{mR\\omega}{2}(\\uparrow)$",
+    "B": "$\\dfrac{mR\\omega}{2}(\\downarrow)$",
+    "C": "$\\dfrac{mR\\omega^{2}}{2}(\\uparrow)$",
+    "D": "$mR\\omega^{2}(\\uparrow)$",
+    "answer": "C",
+    "analysis": "动静法，附加动反力。质心$C$做匀速圆周运动，其加速度为$a_{C}^{n}=\\dfrac{R}{2}\\omega^{2}$，指向转轴$O$（竖直向上）。添加惯性力$F_{I}=ma_{C}^{n}=\\dfrac{1}{2}mR\\omega^{2}$，方向与$a_{C}^{n}$相反（竖直向下）。附加动反力与该惯性力等值反向，即附加动反力为$\\dfrac{1}{2}mR\\omega^{2}$，铅垂向上。"
+  },
+  {
+    "year": "2021",
+    "bigSubject": "公共基础",
+    "id": 2048,
+    "yearQnum": 60,
+    "smallSubject": "轴向拉伸与压缩",
+    "question": "等截面直杆$DCB$，拉压刚度为$EA$，在$B$端轴向集中力$F$作用下，杆中间的$C$截面轴向位移为：（　　）。<br><img src=\"/images/id2048_2021_60_stem.png\" style=\"max-width:100%\">",
+    "A": "$\\dfrac{2Fl}{EA}$",
+    "B": "$\\dfrac{Fl}{EA}$",
+    "C": "$\\dfrac{Fl}{2EA}$",
+    "D": "$\\dfrac{Fl}{4EA}$",
+    "answer": "C",
+    "analysis": "杆件轴向拉伸变形。$DC$段轴力为$F$，长度$\\dfrac{l}{2}$，故$C$截面相对固定端$D$的轴向位移$\\Delta_{C}=\\dfrac{F\\cdot\\dfrac{l}{2}}{EA}=\\dfrac{Fl}{2EA}$。"
+  },
+  {
+    "year": "2021",
+    "bigSubject": "公共基础",
+    "id": 2049,
+    "yearQnum": 63,
+    "smallSubject": "弯曲",
+    "question": "边长为$a$的正方形，中心挖去一个直径为$d$的圆后，截面对$z$轴的抗弯截面系数是：（　　）。<br><img src=\"/images/id2049_2021_63_stem.png\" style=\"max-width:100%\">",
+    "A": "$W_{z}=\\dfrac{a^{4}}{12}-\\dfrac{\\pi d^{4}}{64}$",
+    "B": "$W_{z}=\\dfrac{a^{3}}{6}-\\dfrac{\\pi d^{3}}{32}$",
+    "C": "$W_{z}=\\dfrac{a^{3}}{6}-\\dfrac{\\pi d^{4}}{32a}$",
+    "D": "$W_{z}=\\dfrac{a^{3}}{6}-\\dfrac{\\pi d^{4}}{16a}$",
+    "answer": "C",
+    "analysis": "惯性矩和抗弯截面系数计算。$I_{z}=\\dfrac{a^{4}}{12}-\\dfrac{\\pi d^{4}}{64}$，$W_{z}=\\dfrac{I_{z}}{a/2}=\\dfrac{a^{3}}{6}-\\dfrac{\\pi d^{4}}{32a}$。"
+  },
+  {
+    "year": "2021",
+    "bigSubject": "公共基础",
+    "id": 2050,
+    "yearQnum": 77,
+    "smallSubject": "渗流",
+    "question": "工程上常见的地下水运动属于：（　　）。",
+    "A": "有压渐变渗流",
+    "B": "无压渐变渗流",
+    "C": "有压急变渗流",
+    "D": "无压急变渗流",
+    "answer": "B",
+    "analysis": "渗流及其特点。工程上常见的地下水一般为潜水，潜水受重力作用具有自由水面，通过包气带与大气相通，属于无压渗流；地下水流速很慢，流线接近于平行直线，符合线性渗透定律（达西定律），属于渐变渗流。故为无压渐变渗流。"
   }
 ]
