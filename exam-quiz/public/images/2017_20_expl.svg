@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 420" font-family="sans-serif">
+  <rect width="660" height="420" fill="#ffffff"/>
+  <!-- axes -->
+  <line x1="70" y1="340" x2="620" y2="340" stroke="#333" stroke-width="2"/>
+  <polygon points="620,340 610,335 610,345" fill="#333"/>
+  <line x1="70" y1="340" x2="70" y2="30" stroke="#333" stroke-width="2"/>
+  <polygon points="70,30 65,40 75,40" fill="#333"/>
+  <text x="600" y="365" font-size="18">工期 T</text>
+  <text x="40" y="40" font-size="18">费用 C</text>
+  <!-- 间接费：随工期线性增加 -->
+  <line x1="90" y1="322" x2="590" y2="80" stroke="#1f77b4" stroke-width="2.5"/>
+  <text x="520" y="72" font-size="17" fill="#1f77b4">间接费</text>
+  <!-- 直接费：随工期减小（凸曲线） -->
+  <path d="M 90 60 C 170 230 300 268 590 278" fill="none" stroke="#d62728" stroke-width="2.5"/>
+  <text x="120" y="52" font-size="17" fill="#d62728">直接费</text>
+  <!-- 总成本：U 形曲线，最低点在最佳工期 -->
+  <path d="M 90 130 C 180 260 260 292 330 293 C 420 294 520 240 590 175" fill="none" stroke="#2ca02c" stroke-width="2.5"/>
+  <text x="560" y="160" font-size="17" fill="#2ca02c">总成本</text>
+  <!-- 最佳工期 T* -->
+  <line x1="330" y1="293" x2="330" y2="340" stroke="#666" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <circle cx="330" cy="293" r="4" fill="#2ca02c"/>
+  <text x="300" y="362" font-size="16">T*（最佳工期）</text>
+  <!-- TN -->
+  <line x1="470" y1="255" x2="470" y2="340" stroke="#666" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <text x="462" y="362" font-size="16">T<tspan dy="4" font-size="12">N</tspan></text>
+</svg>

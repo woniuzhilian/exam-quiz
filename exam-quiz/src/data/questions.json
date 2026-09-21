@@ -2774,7 +2774,7 @@
   {
     "year": "2014",
     "smallSubject": "电磁学",
-    "question": "真空中有三个带电质点,其电荷分别为q$_{1}$ ,q$_{2}$ , 和 q$_{3}$ ,其中,电荷为q$_{1}$ 和 q$_{3}$ 的质 点位置固定,电荷为q 的质点可以自由移动,当三个质点的空间分布如图所示时,电荷为q$_{2}$ 2 的质点静止不动,此时如下关系成立的是:( ).<br><img src=\"/images/id936_2014_79_1.png\" style=\"max-width:100%;\">",
+    "question": "真空中有三个带电质点，其电荷分别为$q_1$、$q_2$和$q_3$，其中，电荷为$q_1$和$q_3$的质点位置固定，电荷为$q_2$的质点可以自由移动，当三个质点的空间分布如图所示时，电荷为$q_2$的质点静止不动，此时如下关系成立的是:( ).<br><img src=\"/images/id936_2014_79_1.png\" style=\"max-width:100%;\">",
     "A": "$q_1=q_2=2q_3$",
     "B": "$q_1=q_3=|q_2|$",
     "C": "$q_1=q_2=-q_3$",
@@ -4454,7 +4454,7 @@
   {
     "year": "2016",
     "smallSubject": "电磁学",
-    "question": "真空中,点电荷$q_1$和$q_2$的空间位置如图所示,若$q_1$为正电荷,且$q_2=-q_1$,则A点的电场强度的方向是:( ).<br><img src=\"/images/id937_2016_79_9.png\" style=\"max-width:100%;\"><br><img src=\"/images/id937_2016_79_8.png\" style=\"max-width:100%;\"><br><img src=\"/images/id937_2016_79_4.png\" style=\"max-width:100%;\"><br><img src=\"/images/id937_2016_79_3.png\" style=\"max-width:100%;\"><br><img src=\"/images/id937_2016_79_10.png\" style=\"max-width:100%;\"><br><img src=\"/images/id937_2016_79_11.png\" style=\"max-width:100%;\"><br><img src=\"/images/id937_2016_79_7.png\" style=\"max-width:100%;\"><br><img src=\"/images/id937_2016_79_12.png\" style=\"max-width:100%;\"><br><img src=\"/images/id937_2016_79_5.png\" style=\"max-width:100%;\"><br><img src=\"/images/id937_2016_79_6.png\" style=\"max-width:100%;\">",
+    "question": "真空中,点电荷$q_1$和$q_2$的空间位置如图所示,若$q_1$为正电荷,且$q_2=-q_1$,则A点的电场强度的方向是:( ).<br><img src=\"/images/2016_79.png\" style=\"max-width:100%;\" />",
     "A": "从A点指向$q_1$",
     "B": "从A点指向$q_2$",
     "C": "垂直于$q_1q_2$连线,方向向上",
@@ -10326,7 +10326,7 @@
     "C": "$\\Delta E=0,W$一定为负",
     "D": "$\\Delta E>0,W$一定为正",
     "answer": "A",
-    "analysis": "热力学第一定律  内能是状态参量,与过程无关,对同一温度,内能的变化$\\Delta E=0 ,$由于功是过程参量,走 不同的路径,做功不同.例如,图中的PV图,从a到b,可以走上面曲线膨胀,从b到a 走下面曲线压缩,做功是相反的,但内能不变.选A.",
+    "analysis": "热力学第一定律  内能是状态参量,与过程无关,对同一温度,内能的变化$\\Delta E=0 ,$由于功是过程参量,走 不同的路径,做功不同.<br><img src=\"/images/2020_27_expl.png\" style=\"max-width:100%;\" /><br>例如,图中的PV图,从a到b,可以走上面曲线膨胀,从b到a 走下面曲线压缩,做功是相反的,但内能不变.选A.",
     "id": 746,
     "bigSubject": "公共基础",
     "yearQnum": 27
@@ -18567,12 +18567,12 @@
     "year": "2024",
     "smallSubject": "气体动理论与热力学基础",
     "question": "麦克斯韦速率分布曲线如图所示,图中A,B两部分面积相等,则该图表示:( ).<br><img src=\"/images/id340_2024_26_1.png\" style=\"max-width:100%;\">",
-    "A": "v 为最概然速率 0",
-    "B": "v 为平均速率 0",
-    "C": "v 为方均根速率 0",
-    "D": "速率大于和小于v 的分子数各占一半",
+    "A": "$v_0$为最概然速率",
+    "B": "$v_0$为平均速率",
+    "C": "$v_0$为方均根速率",
+    "D": "速率大于和小于$v_0$的分子数各占一半",
     "answer": "D",
-    "analysis": "速率分布函数的物理意义 速率分布函数的物理意义:图形面积表示分子的速率在间隔v~v$+\\Delta$v内的概率,也 表示在该间隔内的分子数占总分子数的百分率.而平均速率是指所有分子速率的算术平均值; 方均根速率是指一定量气体的分子速率平均值的二次方的平方根;最概然速率$(v )$是指$f(v) p$曲线极大值处相对应的速率值,如下图所示.",
+    "analysis": "速率分布函数的物理意义 速率分布函数的物理意义:图形面积表示分子的速率在间隔v~v$+\\Delta$v内的概率,也 表示在该间隔内的分子数占总分子数的百分率.而平均速率是指所有分子速率的算术平均值; 方均根速率是指一定量气体的分子速率平均值的二次方的平方根;最概然速率$v_p$是指$f(v)$曲线极大值处相对应的速率值，如下图所示。<br><img src=\"/images/2024_26_expl.png\" style=\"max-width:100%;\" />",
     "id": 1345,
     "bigSubject": "公共基础",
     "yearQnum": 26
@@ -20191,7 +20191,7 @@
     "year": "2016",
     "yearQnum": 22,
     "smallSubject": "位移计算",
-    "question": "图示对称结构 C 点的水平位移$\\Delta$ CH =$\\Delta$（右），若 AC 杆 EI 增大一倍，BC 杆 EI 不变，则$\\Delta$ CH变为（ ）<br><img src=\"/images/pro/2016_22.png\" style=\"max-width:100%;\" />",
+    "question": "图示对称结构 C 点的水平位移$\\Delta_{CH} = \\Delta$（右），若 AC 杆 EI 增大一倍，BC 杆 EI 不变，则$\\Delta$ CH变为（ ）<br><img src=\"/images/pro/2016_22.png\" style=\"max-width:100%;\" />",
     "A": "2 $\\Delta$",
     "B": "1.5 $\\Delta$",
     "C": "0.5 $\\Delta$",
@@ -21009,7 +21009,7 @@
     "C": "停止压缩关键工作的持续时间",
     "D": "停止压缩非关键工作的持续时间",
     "answer": "B",
-    "analysis": "首先，压缩非关键工作并不能缩短总工期，只会使成本增加，因此直接排除 B、D 选项。间接费与工作持续时间呈线性关系，直接费与工作持续时间是非线性关系，从图中可见，当工期从 TN 压缩至最佳工期（直接费与间接费相等）时，总成本是降低的。从最佳工期继续压缩时，间接费按比例下降，而直接费并非按比例上升，直接费的增加快于间接费的降低，工程总成本呈上升趋势，故应停止压缩本项关键工作。",
+    "analysis": "首先，压缩非关键工作并不能缩短总工期，只会使成本增加，因此直接排除 B、D 选项。间接费与工作持续时间呈线性关系，直接费与工作持续时间是非线性关系，<br><img src=\"/images/2017_20_expl.svg\" style=\"max-width:100%;\" /><br>从图中可见，当工期从 TN 压缩至最佳工期（直接费与间接费相等）时，总成本是降低的。从最佳工期继续压缩时，间接费按比例下降，而直接费并非按比例上升，直接费的增加快于间接费的降低，工程总成本呈上升趋势，故应停止压缩本项关键工作。",
     "id": 1519,
     "bigSubject": "专业基础"
   },
@@ -24425,7 +24425,7 @@
     "C": "$PL^2/4EI$",
     "D": "$PL^2/3EI$",
     "answer": "B",
-    "analysis": "(1)去掉弹簧，以未知力X$_1$替代，得到如下图所示基本体系：力法方程为：$\\delta_{11}X_1 + \\Delta_{1p} = -\\frac{x_1}{k}$。(2)施加竖直向上单位力，M$_p$和$\\overline{M}$图如下。(3)求解系数，解力法方程：$\\delta_{11} = \\frac{1}{2} \\times l \\times l \\times \\frac{2l}{3EI} = \\frac{l^3}{3EI}$，$\\Delta_{1p} = -\\frac{1}{2} \\times l \\times pl \\times \\frac{2l}{3EI} = \\frac{-pl^3}{3EI}$。带入力法方程，解得：X$_1$ = $\\frac{2p}{3}$。(4)图乘法求位移，B 点施加单位力矩，M$_p$和$\\overline{M}$图如下。则：$\\theta_B = -\\frac{1}{2} \\times l \\times \\frac{pl}{3} \\times \\frac{1}{EI} = \\frac{pl^2}{6EI}$",
+    "analysis": "(1)去掉弹簧，以未知力X$_1$替代，得到如下图所示基本体系：<br><img src=\"/images/pro/2021_24_expl1.png\" style=\"max-width:100%;\" /><br>力法方程为：$\\delta_{11}X_1 + \\Delta_{1p} = -\\frac{x_1}{k}$。(2)施加竖直向上单位力，M$_p$和$\\overline{M}$图如下。<br><img src=\"/images/pro/2021_24_expl2.png\" style=\"max-width:100%;\" /><br>(3)求解系数，解力法方程：$\\delta_{11} = \\frac{1}{2} \\times l \\times l \\times \\frac{2l}{3EI} = \\frac{l^3}{3EI}$，$\\Delta_{1p} = -\\frac{1}{2} \\times l \\times pl \\times \\frac{2l}{3EI} = \\frac{-pl^3}{3EI}$。带入力法方程，解得：X$_1$ = $\\frac{2p}{3}$。(4)图乘法求位移，B 点施加单位力矩，M$_p$和$\\overline{M}$图如下。<br><img src=\"/images/pro/2021_24_expl3.png\" style=\"max-width:100%;\" /><br>则：$\\theta_B = -\\frac{1}{2} \\times l \\times \\frac{pl}{3} \\times \\frac{1}{EI} = \\frac{pl^2}{6EI}$",
     "id": 1763,
     "bigSubject": "专业基础"
   },
@@ -26020,7 +26020,7 @@
     "B": "剪力较小的部位",
     "C": "施工方便的部位",
     "D": "B+C",
-    "answer": "A",
+    "answer": "D",
     "analysis": "施工缝留设位置的原则是：应设置在结构受剪力较小且便于施工的部位。",
     "id": 1877,
     "bigSubject": "专业基础"
@@ -26105,7 +26105,7 @@
     "C": "$5Pa^2/(4EI)$",
     "D": "$-5Pa^2/(4EI)$",
     "answer": "C",
-    "analysis": "(1)对 A 点施加顺时针单位力偶，做出$\\overline{M_1}$和$M_p$图分别如下：(2)图乘法：$\\frac{1}{EI}(\\frac{1}{2} \\times pa \\times a \\times 1) + \\frac{1}{2EI}(\\frac{1}{2} \\times pa \\times a \\times 1 + pa \\times a \\times 1) = 5Pa^2/(4EI)$",
+    "analysis": "(1)对 A 点施加顺时针单位力偶，做出$\\overline{M_1}$和$M_p$图分别如下：<br><img src=\"/images/pro/2022bu_24_expl.png\" style=\"max-width:100%;\" /><br>(2)图乘法：$\\frac{1}{EI}(\\frac{1}{2} \\times pa \\times a \\times 1) + \\frac{1}{2EI}(\\frac{1}{2} \\times pa \\times a \\times 1 + pa \\times a \\times 1) = 5Pa^2/(4EI)$",
     "id": 1883,
     "bigSubject": "专业基础"
   },
@@ -26119,7 +26119,7 @@
     "C": "l/EI",
     "D": "4l/3EI",
     "answer": "A",
-    "analysis": "(1)令X$_1$ = 1，做出$\\overline{M_1}$图如下：(2)图形自乘：$\\delta_{11} = \\frac{1}{EI}(\\frac{1}{2} \\times l \\times 1 \\times \\frac{2}{3}) \\times 2 = 2l/(3EI)$",
+    "analysis": "(1)令X$_1$ = 1，做出$\\overline{M_1}$图如下：<br><img src=\"/images/pro/2022bu_25_expl.png\" style=\"max-width:100%;\" /><br>(2)图形自乘：$\\delta_{11} = \\frac{1}{EI}(\\frac{1}{2} \\times l \\times 1 \\times \\frac{2}{3}) \\times 2 = 2l/(3EI)$",
     "id": 1884,
     "bigSubject": "专业基础"
   },
@@ -26972,7 +26972,7 @@
     "B": "3",
     "C": "4",
     "D": "1",
-    "answer": "D",
+    "answer": "A",
     "analysis": "动力自由度分析，M$_1$ 的竖向振动和水平振动没有约束，均存在。因为杆件不考虑轴向变形，所以 M$_1$ 与 M$_2$ 水平振动同步，属于一个动力自由度；M$_2$ 竖向直接受其连接的底端固结竖杆约束，不会发生振动，即不计入动力自由度。故结构有两个动力自由度，为 M$_1$ 竖向振动和 M$_1$M$_2$ 同步水平振动。",
     "id": 1945,
     "bigSubject": "专业基础"
@@ -27729,7 +27729,7 @@
     "C": "$\\frac{L}{2f}\\Delta$",
     "D": "$\\frac{L}{f}\\Delta$",
     "answer": "B",
-    "analysis": "使用虚功原理，在 C 点加一个单位力 1（↓）。$F_{Bx} \\cdot f = \\frac{1}{2} \\cdot \\frac{L}{2}$，$F_{Bx} = \\frac{L}{4f}$（向左）。故，根据虚功方程：$1 \\cdot \\Delta_C + (-F_{Bx}) \\cdot \\Delta = 0 \\rightarrow \\Delta_C = \\frac{L}{4f} \\Delta$",
+    "analysis": "使用虚功原理，在 C 点加一个单位力 1（↓）。<br><img src=\"/images/pro/2024_24.png\" style=\"max-width:100%;\" /><br>$F_{Bx} \\cdot f = \\frac{1}{2} \\cdot \\frac{L}{2}$，$F_{Bx} = \\frac{L}{4f}$（向左）。故，根据虚功方程：$1 \\cdot \\Delta_C + (-F_{Bx}) \\cdot \\Delta = 0 \\rightarrow \\Delta_C = \\frac{L}{4f} \\Delta$",
     "id": 1999,
     "bigSubject": "专业基础"
   },
