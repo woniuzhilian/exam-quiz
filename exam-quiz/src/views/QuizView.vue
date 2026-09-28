@@ -139,12 +139,16 @@ const showPicker = ref(false)
 
 const sectionKey = computed(() => makeSectionKey(mode.value, section.value))
 
+// "我不会"的答题记录哨兵值（统计时等同答错）
+const DONT_KNOW = '__DONT_KNOW__'
+
 const currentQuestion = computed(() => questions.value[currentIndex.value])
 
 const currentUserAnswer = computed(() => {
   if (!currentQuestion.value) return ''
   const answers = getSectionAnswers(bigSubject.value, sectionKey.value)
-  return answers[currentQuestion.value.id] || ''
+  const a = answers[currentQuestion.value.id] || ''
+  return a === DONT_KNOW ? '' : a
 })
 
 onMounted(() => {
@@ -190,8 +194,12 @@ function loadQuestions() {
 
 function restoreAnswerState() {
   const answers = getSectionAnswers(bigSubject.value, sectionKey.value)
-  if (currentQuestion.value && answers[currentQuestion.value.id]) {
-    selectedAnswer.value = answers[currentQuestion.value.id]
+  const a = currentQuestion.value ? answers[currentQuestion.value.id] : null
+  if (a && a !== DONT_KNOW) {
+    selectedAnswer.value = a
+    isLocked.value = true
+  } else if (a === DONT_KNOW) {
+    selectedAnswer.value = ''
     isLocked.value = true
   } else {
     selectedAnswer.value = ''
@@ -203,16 +211,17 @@ function handleSelect(answer) {
   selectedAnswer.value = answer
 }
 
-function handleSubmit() {
-  if (!selectedAnswer.value || isLocked.value) return
+function handleSubmit(dontKnow = false) {
+  if (isLocked.value) return
+  if (!dontKnow && !selectedAnswer.value) return
 
   isLocked.value = true
 
-  // 保存答题记录
-  saveAnswer(bigSubject.value, sectionKey.value, currentQuestion.value.id, selectedAnswer.value)
+  // 保存答题记录（"我不会"记为哨兵值，统计时等同答错）
+  saveAnswer(bigSubject.value, sectionKey.value, currentQuestion.value.id, dontKnow ? DONT_KNOW : selectedAnswer.value)
 
-  // 答错加入错题本
-  if (selectedAnswer.value !== currentQuestion.value.answer) {
+  // 答错或"我不会"均加入错题本
+  if (dontKnow || selectedAnswer.value !== currentQuestion.value.answer) {
     addWrong(bigSubject.value, currentQuestion.value.id)
   }
 
